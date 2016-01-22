@@ -498,3 +498,6 @@ if (typeof define === "function" && define.amd) {
 }
 
 })(Holder, window);
+$(function(){$(".scroll1").click(function(){$("html,body").animate({scrollTop:$("#About").offset().top},"1000");return false})})
+$(function(){$(".scroll2").click(function(){$("html,body").animate({scrollTop:$("#Demo").offset().top},"2000");return false})})
+$(function(){$(".scroll3").click(function(){$("html,body").animate({scrollTop:$("#Team").offset().top},"2000");return false})})
