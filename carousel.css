@@ -283,7 +283,8 @@ span
 /* twitter button class*/
 .twitterBtn{
     background: #00ABE3;
-	content: "\f099";
+	background-image: url("../img/tw.svg");
+
 }
 
 .twitterBtn:before{
@@ -293,6 +294,7 @@ span
 
 .twitterBtn:hover{
       color: #00ABE3;
+	  background-image: url("../img/tw.svg");
       background: #fff;
 }
 
