@@ -276,7 +276,7 @@ span
 
 .facebookBtn:before{ /* use :before to add the relevant icons */
     font-family: "FontAwesome";
-    content: "\f09a"; /* add facebook icon */
+    /*content: "\f09a"; /* add facebook icon */
 }
 
 .facebookBtn:hover{
