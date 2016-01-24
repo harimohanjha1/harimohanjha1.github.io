@@ -30,7 +30,8 @@
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://assets.freshdesk.com/widget/freshwidget.js"></script>
-    
+    <script type="text/javascript" src="assets/jquery.modal.js"></script>
+	
     <link rel="shortcut icon" href="https://www.todoed.co/assets/ico/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
     
@@ -401,15 +402,15 @@
                     <!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a browsing assistant, assisting the user as if everything thought, typed and/or spotted on the web browser is a delegate-able todo item first.</p>-->
                     <center><!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a tool, assisting the user as if everything useful; <br>thought, typed and/or spotted on the web is a delegate-able todo item first.</p>-->
                     <!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a new kind of a seamless todo listing tool, assisting the user on any <br> text spotted anywhere on the web browser or any device(coming soon),<br> as if that text is a delegate-able todo item first.</p>-->
-                    <p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a new kind of a <a href="#openModal" p style="font-family:myriadprol;padding-top:50px;font-size:22px;text-decoration:none">seamless</a> todo listing tool, assisting the user<br> on any text spotted anywhere on the web browser and (soon),<br> any device, as if that text is instantly a delegate-able todo item first.</p>
+                    <p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a new kind of a <a href="#openModal" id="open" p style="font-family:myriadprol;padding-top:50px;font-size:22px;text-decoration:none">seamless</a> todo listing tool, assisting the user<br> on any text spotted anywhere on the web browser and (soon),<br> any device, as if that text is instantly a delegate-able todo item first.</p>
                     
 
 <div id="openModal" class="modalDialog">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
 		<h2></h2>
-		<p style="font-size:24px;font-family: 'Just Another Hand', cursive;letter-spacing:1px">Seamless? Yes! You don't have to switch screens or apps, meaning, you don't even have to open Todoed to use it to delegate to yourself or your coworkers. Delegate from wherever you are on your browser or (soon) anywhere on any device. When you have a thought or a task, you should be able to instantly not only share it as an instant message or an email or whatever has been your previous method of sharing it, you should also be able to delegate it at the same instance of sharing it. Seamlessly.</p>
-&nbsp</p><a href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" style="font-size:24px;text-decoration:none;font-size:24pxpx;font-family: 'Just Another Hand', cursive;letter-spacing:1px">Try It!</a>
+		<p style="font-size:16px;font-family:'opensans';letter-spacing:1px"><b>Seamless? Yes! You don't have to switch screens or apps, meaning, you don't even have to open Todoed to use it to delegate to yourself or your coworkers. Delegate from wherever you are on your browser or (soon) anywhere on any device. When you have a thought or a task, you should be able to instantly not only share it as an instant message or an email or whatever has been your previous method of sharing it, you should also be able to delegate it at the same instance of sharing it. Seamlessly.</b></p>
+&nbsp</p><a  href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" style="font-size:24px;text-decoration:none;font-family: 'opensans';letter-spacing:1px"><b>Try It!</b></a>
 		</div>
 </div>
 <div class="carousel-inner">
@@ -1141,6 +1142,31 @@
                         <!--End mc_embed_signup-->
                         <!--mailchimpjsends-->
                         <script>
+						   // Get the modal
+var modal = document.getElementById('#openModal');
+// When the user clicks anywhere outside of the modal, close it
+function modalClose() {
+    if (location.hash == '#openModal') {
+        location.hash = '';
+    }
+}
+
+// Handle ESC key (key code 27)
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) {
+        modalClose();
+    }
+});
+
+var modal = document.querySelector('#openModal');
+
+// Handle click on the modal container
+modal.addEventListener('click', modalClose, false);
+
+// Prevent event bubbling if click occurred within modal content body
+modal.children[0].addEventListener('click', function(e) {
+    e.stopPropagation();
+}, false);
                         (function(i, s, o, g, r, a, m) {
                             i['GoogleAnalyticsObject'] = r;
                             i[r] = i[r] || function() {
