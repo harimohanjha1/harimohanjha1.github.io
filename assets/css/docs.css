@@ -846,7 +846,36 @@ h1[id] {
   text-align: right;
   color: #bebec5;
 }
-
+/*for social buttons*/
+.social-slide {
+	height: 48px;
+	width: 48px;
+	margin:2px;
+	float: center;
+	display:inline-block;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}	
+	
+.social-slide:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.twitter-hover {
+	background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/twitter-hover.png');
+}
+.facebook-hover {
+	background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/facebook-hover.png');
+}
+.tumblr-hover {
+	background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/tumblr-hover.png');
+}
+.pinterest-hover {
+	background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/pinterest-hover.png');
+}
 /* Show code snippets when we have the space */
 @media (min-width: 481px) {
   .highlight {
