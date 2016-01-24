@@ -244,13 +244,19 @@ span
     margin-top: 120px;
   }
   
-  .smGlobalBtn{ /* global button class */
+  #social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
     display: inline-block;
     position: relative;
     cursor: pointer;
     width: 50px;
     height: 50px;
-    box-shadow: 0 2px 2px #999;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
     padding: 0px;
     text-decoration: none;
     text-align: center;
@@ -258,16 +264,14 @@ span
     font-size: 25px;
     font-weight: normal;
     line-height: 2em;
-    border-radius: 25px;
-    -moz-border-radius:25px;
-    -webkit-border-radius:25px;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
 }
-
 
 /* facebook button class*/
 .facebookBtn{
     background: #4060A5;
-	content: "\f09a";
 }
 
 .facebookBtn:before{ /* use :before to add the relevant icons */
@@ -278,24 +282,24 @@ span
 .facebookBtn:hover{
     color: #4060A5;
     background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
 }
 
 /* twitter button class*/
 .twitterBtn{
     background: #00ABE3;
-	background-image: url("../img/tw.svg");
-
 }
 
 .twitterBtn:before{
       font-family: "FontAwesome";
       content: "\f099"; /* add twitter icon */
+      
 }
 
 .twitterBtn:hover{
       color: #00ABE3;
-	  background-image: url("../img/tw.svg");
       background: #fff;
+      border-color: #00ABE3;
 }
 
 /* google plus button class*/
@@ -311,6 +315,7 @@ span
 .googleplusBtn:hover{
       color: #e64522;
       background: #fff;
+      border-color: #e64522;
 }
 
 /* linkedin button class*/
@@ -326,12 +331,12 @@ span
 .linkedinBtn:hover{
       color: #0094BC;
       background: #fff;
+      border-color: #0094BC;
 }
 
 /* pinterest button class*/
 .pinterestBtn{
     background: #cb2027;
-	content: "\f0d2";
 }
 
 .pinterestBtn:before{
@@ -342,12 +347,12 @@ span
 .pinterestBtn:hover{
       color: #cb2027;
       background: #fff;
+      border-color: #cb2027;
 }
 
 /* tumblr button class*/
 .tumblrBtn{
     background: #3a5876;
-	content: "\f173";
 }
 
 .tumblrBtn:before{
@@ -358,6 +363,7 @@ span
 .tumblrBtn:hover{
       color: #3a5876;
       background: #fff;
+      border-color: #3a5876;
 }
 
 /* rss button class*/
@@ -373,6 +379,8 @@ span
 .rssBtn:hover{
       color: #e88845;
       background: #fff;
+      border-color: #e88845;
 }
-}
+
+
 #nave li {display: inline; }
