@@ -25,7 +25,7 @@ body {
 	box-shadow:4px 4px 80px #000;
    -webkit-box-shadow:4px 4px 80px #000;
    -moz-box-shadow:4px 4px 80px #000;
-   -webkit-overflow-scrolling: touch;
+   
 	pointer-events: none;
 }
 
