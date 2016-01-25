@@ -9,8 +9,7 @@ body {
 /*For modal boxes*/
 
 .modalDialog {
-	position: absolute;
-	overflow: scroll;
+	position: fixed;
 	font-family: opensans, sans-serif;
 	top: 0;
 	right: 0;
@@ -25,7 +24,7 @@ body {
 	box-shadow:4px 4px 80px #000;
    -webkit-box-shadow:4px 4px 80px #000;
    -moz-box-shadow:4px 4px 80px #000;
-   	pointer-events: none;
+	pointer-events: none;
 }
 
 
