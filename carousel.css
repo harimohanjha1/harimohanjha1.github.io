@@ -35,12 +35,11 @@ body {
 
 .modalDialog > div {
 	
-    width: 400px;
+    width: 600px;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
-	overflow-y:auto;
-    border-radius: 10px;
+	border-radius: 10px;
     background: #fff;
     background: -moz-linear-gradient(#fff, #999);
     background: -webkit-linear-gradient(#fff, #999);
