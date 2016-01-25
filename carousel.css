@@ -9,11 +9,13 @@ body {
 /*For modal boxes*/
 
 .modalDialog {
-	position: fixed;
 	font-family: opensans, sans-serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
+	position: relative;
+    margin: 0 auto;
+    top: 25%;
 	left: 0;
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
