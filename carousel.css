@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
     top: 25%;
 	left: 0;
+	overflow: auto;
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:0;
