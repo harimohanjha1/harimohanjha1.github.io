@@ -9,7 +9,8 @@ body {
 /*For modal boxes*/
 
 .modalDialog {
-	position: absolute;
+	position: absolute
+	overflow: scroll;;
 	font-family: opensans, sans-serif;
 	top: 0;
 	right: 0;
@@ -18,7 +19,6 @@ body {
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:0;
-	overflow: scroll;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
