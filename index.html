@@ -1,1212 +1,1009 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta property="og:url" content="https://www.todoed.co/producthunt" />
-    <meta property="og:site_name" content="Todoed" />
-    <meta property="og:title" content="Todoed" />
-    <meta property="og:image" content="https://i.imgur.com/oZpF8Te.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Todoed is a new kind of a seamless todo listing tool, assisting the user on any text spotted anywhere on the web browser and (soon), any device, as if that text is instantly a delegate-able todo item first." />
-    <meta name="description" content="Todoed is a new kind of a seamless todo listing tool, assisting the user on any text spotted anywhere on the web browser and (soon), any device, as if that text is instantly a delegate-able todo item first.">
-    <meta name="keywords" content="todoed, preseed, highlight, task, todo, right click, any text, text">
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme?">
-    <meta name="google-site-verification" content="Gvqp-M7UCHk43FKUMs34anY5hwdYSdOed9BGg5_3Gk0" />
-    <title>Todoed</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- Bootstrap core CSS -->
+    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/css/socialstyle.css" rel="stylesheet" >
-    <!--<link href="assets/css/socialstylemobile.css" rel="stylesheet" > -->
-    <link href="https://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://assets.freshdesk.com/widget/freshwidget.js"></script>
-    <script type="text/javascript" src="assets/jquery.modal.js"></script>
-	
-    <link rel="shortcut icon" href="https://www.todoed.co/assets/ico/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
-    
+
+
+
+    <title>Preseed</title>
+
+    <meta name="description" content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary." />
+
+    <link href="foaw/css/fa-cleaned.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/ico/Nfavicon.png" />
+    <link href="icons.css" rel="stylesheet" />
+    <link href="css/epicslider-cleaned.css" rel="stylesheet" />
+    <link href="css/flexslider-cleaned.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+    <link href="css/style-cleaned-main.css" rel="stylesheet" />
+    <link href="css/udt_media_queries-cleaned.css" rel="stylesheet" />
+    <link href="css/udt_shortcodes-cleaned.css" rel="stylesheet" />
+	<link href="css/footer.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/jquery.ajaxloading.js"></script>
+    <script type="text/javascript" src="js/jquery.epicslider.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-touch-swipe-1.0.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/onepage.js"></script>
+    <script type="text/javascript" src="js/udt_shortcodes.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" size="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" size="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" size="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="images/ico/Nfavicon.png" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <style type="text/css">
-    input {
-        max-width: 200px;
-        padding: initial;
-        display: inline;
-    }
-    input[type="submit"] {
-        padding: initial;
-    }
-    #top-text span {
-        display: inline-block;
-        height: 46px;
-        line-height: 40px;
-    }
-    #links a {
-        display: inline-block;
-        -webkit-transition: all;
-        -o-transition: all;
-        transition: all;
-        border: none;
-        -webkit-transition-duration: 300ms;
-        -o-transition-duration: 300ms;
-        transition-duration: 300ms;
-    }
-    #links a:hover {
-        opacity: .6;
-    }
-    #f {
-        opacity: 1;
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #f:hover {
-        opacity: .5;
-        text
-    }
-    #t {
-        opacity: 1;
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #t:hover {
-        opacity: .5;
-    }
-    #g {
-        opacity: 1;
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #g:hover {
-        opacity: .5;
-    }
-    #arr {
-        opacity: .7;
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #arr:hover {
-        opacity: .5;
-    }
-    #arrow img {
-        position: relative;
-        -webkit-animation: arr 2s infinite;
-        -o-animation: arr 2s infinite;
-        animation: arr 2s infinite;
-        -webkit-animation-timing-function: ease;
-        -o-animation-timing-function: ease;
-        animation-timing-function: ease;
-    }
-    @-webkit-keyframes arr {
-        0% {
-            top: -40px;
+    @media all and (min-width: 1400px) {
+        #teaser-1 {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
         }
-        50% {
-            top: 0;
+		#caption{
+		font-size:24px; 
+		position: absolute; 
+		top: 20px; 
+		left: 20px;
+		 right: 20px;
+         z-index: 100000; 
+		 text-align: center;
+		 display:block;
+		 margin: 25px auto;
+		}
+        #round-nav {
+            background-color: #FF2778;
+            width: 360px;
+            height: 360px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 180px;
+            margin-left: -180px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
         }
-        100% {
-            top: -40px;
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 140px;
+            width: 300px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
         }
     }
-    @-o-keyframes arr {
-        0% {
-            top: -40px;
+    @media all and (max-width: 1399px) {
+        #teaser-1 {
+            -webkit-background-size: inherit;
+            background-size: inherit;
+            background-position: center;
         }
-        50% {
-            top: 0;
+		#caption{
+		font-size:24px;
+		position: absolute; 
+		top: 20px; 
+		left: 20px;
+		 right: 20px;
+         z-index: 100000; 
+		 text-align: center;
+		 display:block;
+		 margin: 25px auto;
+		}
+        #round-nav {
+            background-color: #FF2778;
+            width: 360px;
+            height: 360px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 180px;
+            margin-left: -180px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
         }
-        100% {
-            top: -40px;
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
         }
-    }
-    @-moz-keyframes arr {
-        0% {
-            top: -40px;
+        #top-logo {
+            position: relative;
+            top: 140px;
+            width: 300px;
+            height: auto;
         }
-        50% {
-            top: 0;
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
         }
-        100% {
-            top: -40px;
-        }
-    }
-    @keyframes arr {
-        0% {
-            top: -40px;
-        }
-        50% {
-            top: 0;
-        }
-        100% {
-            top: -40px;
-        }
-    }
-    #div2 {
-        border-radius: 40px;
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #div2:hover {
-        -webkit-box-shadow: 0 0 10px #65E0A9;
-        box-shadow: 0 0 10px #65E0A9;
-    }
-    #again button {
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #again button:hover {
-        -webkit-box-shadow: 0 0 10px #65E0A9;
-        box-shadow: 0 0 10px #65E0A9;
-    }
-    #sendinvi {
-        -webkit-transition: all 200ms;
-        -o-transition: all 200ms;
-        transition: all 200ms;
-    }
-    #sendinvi:hover {
-        -webkit-box-shadow: 0 0 10px #65E0A9;
-        box-shadow: 0 0 10px #65E0A9;
-    }
-    .carousel .item{height:300px;}
-    .video-container {
-    position: relative;
-    padding-bottom: 46.25%;
-    padding-top: 35px;
-    margin-right: 15px;
-    margin-left: 15px;
-    height: 0;
-    overflow: hidden;
-}
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#todoedh
-{
-    
-    margin-left: -1%;
-    font-family:Montserrat;
-    
-
-    line-height:32px;font-size:1.8em;color:#1f2634;
-}
-#alphah
-{
-
-    font-family:proximanova
-    
-
-    line-height:32px;font-size:1.2em;color:#8693af;
-}
-#install-button:hover
-{
-    box-shadow: 0px 0px 3px #4689E9;
-}
-#sendinvi:hover
-{
-    box-shadow: 0px 0px 3px #4689E9;
-}
-    </style>
-
-    <script type="text/javascript">
-        
-    function message() {
-        div = document.getElementById('msg');
-        div.style.display = "block";
-    }
-
-    function resize() {
-        var x = window.innerWidth;
-        var y = 0.04 * x;
-        if (750 <= x <= 1500) {
-            document.getElementById('subs-head').style.fontSize = y + 'px';
-            document.getElementById('h22').style.fontSize = y + 'px';
-        }
-        if (x > 1500) {
-            document.getElementById('subs-head').style.fontSize = '60px';
-            document.getElementById('h22').style.fontSize = '60px';
-        }
-        if (x < 750) {
-            document.getElementById('subs-head').style.fontSize = '32px';
-            document.getElementById('h22').style.fontSize = '28px';
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
         }
     }
-
-    // var isInstalledNode = document.createElement('div');
-    // isInstalledNode.id = 'extension-is-installed';
-    // document.body.appendChild(isInstalledNode);
-
-    // function ExtInstall() {
-    //     if (document.getElementById('extension-is-installed')) {
-    //         alert("Already Installed");
-    //     } else {
-    //         chrome.webstore.install();
-    //         console.log("installing");
-    //     }
-    // }
+    @media all and (max-width: 719px) {
+	#caption{
+		font-size:21px;
+		position: absolute; 
+		top: 20px; 
+		left: 20px;
+		 right: 20px;
+         z-index: 100000; 
+		 text-align: center;
+		 display:block;
+		 margin: 25px auto;
+		}
+        #round-nav {
+            background-color: #FF2778;
+            width: 300px;
+            height: 300px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 230px;
+            margin-left: -150px;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 123.33333px;
+            width: 250px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover > * {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+    }
+    @media all and (max-width: 475px) {
+	#caption{
+		font-size:18px;
+		position: absolute; 
+		
+		left: 10px;
+		 right: 10px;
+         z-index: 100000; 
+		 text-align: center;
+		 display:block;
+		 margin: 5px auto;
+		}
+        #round-nav {
+            background-color: #FF2778;
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            border-radius: 100%;
+            margin-top: 170px;
+            margin-left: -80px;
+            left: 60%;
+            text-align: center;
+            position: absolute;
+        }
+        #round-nav,
+        #top-logo {
+            -webkit-transition: all 400ms;
+            -o-transition: all 400ms;
+            transition: all 400ms;
+        }
+        #top-logo {
+            position: relative;
+            top: 56.6666666667px;
+            width: 125px;
+            height: auto;
+        }
+        #round-nav:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.13, 1.13);
+            -ms-transform: scale(1.13, 1.13);
+            -o-transform: scale(1.13, 1.13);
+            transform: scale(1.13, 1.13);
+        }
+        #round-nav:hover >  {
+            -webkit-transform: scale(.8849557, .8849557);
+            -ms-transform: scale(.8849557, .8849557);
+            -o-transform: scale(.8849557, .8849557);
+            transform: scale(.8849557, .8849557);
+        }
+    }
 	
-    </script>
+	.twitter-follow-button{
+	width:100% !important;
+	}
 
-   <!--<script src="//my.hellobar.com/0f15d31ff5fc208c0b1f141cefd9c1026ae6d211.js" type="text/javascript" charset="utf-8" async></script>-->
-
-<script src="//load.sumome.com/" data-sumo-site-id="ac318dcb8cf95eb8d85da9748cbef602a92a666852c40b6e56c2c9e36a21848d" async="async"></script>
-         <!-- Custom styles for this template -->
-</head>
-<!-- NAVBAR
-================================================== -->
-
-<body style="background-color:#FFFFFF;padding-bottom:0;padding-top:10px;" onload="resize()">
-
+    .hn-button{
+        width: 100px;
+        height: 20px;
+    }
+	
+    
 
 
-    <!-- FB Like Button Script starts  -->
-    <div id="fb-root"></div>
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-bottom: 5px;
+	margin-left: -80px;
+	padding: 7px;
+	width: 160px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border-radius:         3px;
+	background-color: #2095c0;
+	background-color: #2095c0;
+	color: #fff;
+	content: attr(data-tooltip);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 5px solid #000;
+	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+	
+    </style>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!-- script for google analytics -->
     <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45882697-3', 'auto');
+          ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+		<p><img style="float:left; padding-right:10px;padding-top:10px;width:280px;height:80px" src="images/Nnavbarlogo.png">
+		<p><img style="float:right; padding-right:10px;padding-top:10px;width:280px;height:80px" src="images/proj2_360.png">
+		</p>
+		</p>
+		
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=567797739996281&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+</script>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s);
         js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1453247728270397&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-    
-    
-    <!--<nav class="social">
-          <ul>
-              <li><a href="https://twitter.com/Todoed_pwl" target="_blank">Twitter <i class="fa fa-twitter"><img id="t" src="assets/images/twitter.png" style="max-width:80%;max-height:80%;height:28px;"></i></a></li>
-              <li><a href="https://www.facebook.com/Todoed.co" target="_blank">Facebook <i class="fa fa-facebook"><img id="f" src="facebook.jpg" style="max-width:80%;max-height:80%;"></i></a></li>
-              <li><a href="https://plus.google.com/110899214789988215156" target="_blank">Google + <i class="fa fa-dribbble"><img id="g" src="assets/images/google-plus-256.png" style="height:28px;"></i></a></li>
-              <li><a href="http://blog.todoed.co/" target="_blank">Tumbler <i class="fa fa-behance"><img id="g" src="assets/images/tumblr-todoed.jpg" style="height:28px;"></i></a></li>
-              <li><a href="https://www.pinterest.com/todoed/todoed-turn-any-text-into-a-task-with-just-one-rig/" target="_blank">Pinterest <i class="fa fa-behance"><img id="g" src="assets/images/pinterest.png" style="height:28px;"></i></a></li>
-              <li><a href="https://delicious.com/todoed" target="_blank">Delicious <i class="fa fa-behance"><img id="g" src="assets/images/delicious.png" style="height:28px;"></i></a></li>
+    <script type="text/javascript">
+    var isMobile = false;
 
-          </ul>
-      </nav>-->
+    if (navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i)) {
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:auto;display:block;margin-bottom:0;">
-        <!-- Indicators -->
-        <div class="carousel-inner" style="height:auto;">
-            <div class="item active" style="background-color:#FFFFFF;height:auto;">
-                <!--  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
+        isMobile = true;
 
-                <!--
-      <center><img src="assets/images/todoed.png" width="300px" style="margin-top:120px;margin-bottom:30px;vertical-align:center"></center>
-      -->
-                <!--<div id="nave" style="max-height:50px;width:100%;text-align:right;padding:20px 25px 5px 0;display:block;margin-bottom:20px;">
-                <div id="mobisocial" style="padding:0px 25px 5px 0;visibility:hidden;">
-                     <ul style="padding-top:5px;padding-bottom:5px;">
-                        <li style="display:inline-block;padding-right:10px;">
-                            <a href="https://www.facebook.com/Todoed.co" target="_blank">
-                                <img id="f" src="facebook.jpg" style="max-width:80%;max-height:80%;">
-                            </a>
-                        </li>
-                        <li style="display:inline-block;padding-left:10px;padding-right:10px;">
-                            <a href="https://twitter.com/Todoed_pwl" target="_blank">
-                                <img id="t" src="twitter.jpg" style="max-width:80%;max-height:80%;">
-                            </a>
-                        </li>
-                        <li style="display:inline-block;padding-left:10px;padding-right:10px;">
-                            <a href="https://plus.google.com/110899214789988215156" rel="publisher" target="_blank">
-                                <img id="g" src="assets/images/google-plus-256.png" style="height:28px;">
-                            </a>
-                        </li>
-                        <li style="display:inline-block;padding-left:10px;padding-right:10px;">
-                            <a href="http://blog.todoed.co/" target="_blank">
-                                <img id="g" src="assets/images/tumblr-todoed.jpg" style="height:28px;">
-                            </a>
-                        </li>
-                        <li style="display:inline-block;padding-left:10px;padding-right:10px;">
-                            <a href="https://www.pinterest.com/todoed/todoed-turn-any-text-into-a-task-with-just-one-rig/" target="_blank">
-                                <img id="g" src="assets/images/pinterest.png" style="height:28px;">
-                            </a>
-                        </li>
-                        <li style="display:inline-block;padding-left:10px;padding-right:10px;">
-                            <a href="https://delicious.com/todoed" target="_blank">
-                                <img id="g" src="assets/images/delicious.png" style="height:28px;">
-                            </a>
-                        </li>
-                    </ul> 
-                    </div>
-                </div>-->
+    }
+
+    $(window).load(function() {
+
+        //call slider
+        $('.epicSlider').epicSlider({
+
+            loop: false, //Boolean: whether slideshow should loop or not 
+            slideShow: true, //Boolean: use slideshow or not
+            autoPlay: true, //Boolean: autoplay uplon load or not
+            slideShowInterval: 4000, //Integer: slideshow cycling speed, in milliseconds
+            transitionSpeed: 1000, //Integer: transitions speed, in milliseconds
+            startSlide: 0, //Integer: starts at 0
+            shuffleSlides: false, //Boolean: shuffle slides or not
+            easing: 'easeInOutQuint', //String: easing method - see http://jqueryui.com/demos/effect/easing.html
+            fx: 'leftToRight', //String: none, fade, leftToRight, topToBottom 
+            fxmobile: 'leftToRight', //String: mobile effect -  none, fade, leftToRight, topToBottom 
+            pattern: true //Boolean: add pattern or not
+
+        });
 
 
-                <div style="">
-                
-<a class="scroll1" href="#About"h4="" style="font-size:15px;font-family:opensans;font-weight:bold;color:black;position: absolute; top: 0; right: 180px; width: 0%;text-decoration:none;text-align:right;letter-spacing:1px">About</a>&nbsp
-<a class="scroll2" href="#Demo" h4="" style="font-size:15px;font-family:opensans;font-weight:bold;color:black;position: absolute; top: 0; right: 120px; width: 0%;text-decoration:none;text-align:right;letter-spacing:1px">Demo</a>&nbsp
-<a class="scroll3" href="#Team" h4="" style="font-size:15px;font-family:opensans;font-weight:bold;color:black;position: absolute; top: 0; right: 60px; width: 0%;text-decoration:none;text-align:right;letter-spacing:1px">Team</a>&nbsp
+    });
+    </script>
 
-				</div>
-                <center>
-                    
-                    <img src="assets/images/logo.jpg" style="margin:0px;clear:right;width:320px;height:60px;min-width:100px;max-width:400px;margin-top:3%;margin-bottom:40px;display:inline-block;">
-                    
-                     
-                </center>
+    <script type="text/javascript" >
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '{your-app-id}',
+            xfbml: true,
+            version: 'v2.0'
+        });
+    };
 
-                <center>
-                    <h1 id="top-text" style="line-height:1.2;font-family:opensans;color:#2A3F55;font-size:26px;display:inline-block;margin-bottom:20px;font-weight:bold">Turn any selected text, into a delegated todo, with just one right click. </h1>
-                </center>
-                </center>
-                <br/>
-                <br/>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-                <div align="center" class="container" style="display:block;margin:10px auto 50px;height:auto;">
-                    <div id="div1" style="display:inline-block;max-width:200px;margin-right:20px;">
-                        <a href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" target="_blank">
-                            <img src="assets/images/aows.png" style="display:inline-block;vertical-align:middle;max-width:280px0px;height:auto;" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.carousel-inner -->
-    <center>
+	    <!--opening page-->
+		    <div class="page odd section">
 
-    </center>
-    </br>
-    
-    <!-- Indicators -->
-
-    <div class="carousel-inner">
-
-        <div class="item active" style="background-color:#FFFFFF;">
-
-            <!--  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
-
-            <div class="container">
-
-
-                <div id="heading3" style="height:auto;width:90%;margin-left:auto;margin-right:auto;text-align:center;">
-                    <!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a browsing assistant, assisting the user as if everything thought, typed and/or spotted on the web browser is a delegate-able todo item first.</p>-->
-                    <center><!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a tool, assisting the user as if everything useful; <br>thought, typed and/or spotted on the web is a delegate-able todo item first.</p>-->
-                    <!--<p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a new kind of a seamless todo listing tool, assisting the user on any <br> text spotted anywhere on the web browser or any device(coming soon),<br> as if that text is a delegate-able todo item first.</p>-->
-                    <p style="font-family:myriadprol;padding-top:50px;font-size:22px;">Todoed is a new kind of a <a href="#openModal" id="open" p style="font-family:myriadprol;padding-top:50px;font-size:22px;text-decoration:none">seamless</a> todo listing tool, assisting the user<br> on any text spotted anywhere on the web browser and (soon),<br> any device, as if that text is instantly a delegate-able todo item first.</p>
-                    
-
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2></h2>
-		<p style="font-size:16px;font-family:'opensans';letter-spacing:1px"><b>Seamless? Yes! You don't have to switch screens or apps, meaning, you don't even have to open Todoed to use it to delegate to yourself or your coworkers. Delegate from wherever you are on your browser or (soon) anywhere on any device. When you have a thought or a task, you should be able to instantly not only share it as an instant message or an email or whatever has been your previous method of sharing it, you should also be able to delegate it at the same instance of sharing it. Seamlessly.</b></p>
-&nbsp</p>
- <a href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" target="_blank">
-                            <img src="assets/images/aows_edited.jpg" style="display:inline-block;padding:20px;vertical-align:middle;max-width:200px;border-radius: 25px;max-height:160px;" />
-                        </a>		</div>
-</div>
-<div class="carousel-inner">
-	
-        <div class="item active" style="background-color:#ffffff;">
-
-            <!--  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
-
-            <div class="container-fluid">
-                <!--<center><h2 style="margin-top:100px;color:#000000;font-family:myriadprol;line-height:1.4em">Now use this fastest to do list as the first point of reference for organising your tasks on task management tools like asana, producteev, todoist etc. if you use these tools. However, we notice that for some of us Todoed is more than enough to keep us on top of our tasks.</h2>
-    </center>-->
-                <center>
-                    <hr size=4 width="50%">
-                    <!--<h1 style="color:#000000;font-family:myriadprol;padding-top:10px;display:block;padding-bottom:10px;vertical-align:middle;margin-top:0;">As seen in</h1>
-                    <div style="margin-top:25px;margin-bottom:45px" id="links">
-                        <!--<a href="http://www.crunchbase.com/product/todoed-2" target="_blank">
-                            <img src="assets/images/crunch_base.png" alt="crunch base" style="padding:20px">
-                        </a>-->
-                        <!-- pcworld   -->
-                        <!--<a href="http://yourstory.com/2014/08/smart-to-do-lists-todoed/" target="_blank">
-                            <img src="assets/images/5.png" alt="Your story" style="width:180px;height:108px;padding:20px">
-                        </a>-->
-
-                       
-
-                        <!--<a href="http://launchlist.co/item/todoed" target="_blank">
-                            <img src="assets/images/launch_list.png" alt="launch list" style="padding:20px;padding-bottom:30px;">
-                        </a>-->
-						<br>
-                        <a href="http://www.lifehack.org/282512/11-tools-for-productive-individuals" target="_blank">
-                            <img src="assets/images/3.png" alt="Lifehack.org" style="padding:20px">
-                        </a>
-                         <a href="http://www.cnet.com/how-to/turn-text-into-tasks-with-chrome-extension-todoed/" target="_blank">
-                            <img src="assets/images/send.png" alt="CNET" style="padding:20px;width:120px;height:120px">
-                        </a>
-                        <a href="http://economictimes.indiatimes.com/small-biz/startups/how-nishchal-kesarwani-of-todoed-co-wants-to-change-the-way-we-plan-our-tasks/articleshow/48870028.cms" target="_blank">
-                            <img src="assets/images/2.png" alt="Economic times" style="width:220px;height:59px;padding:20px">
-                        </a>
-                        <a href="http://www.pcworld.com/article/2910738/todoed-makes-creating-task-lists-as-easy-as-a-right-click.html" target="_blank">
-                            <img src="assets/images/4.png" alt="PC world" style="padding:20px">
-                        </a>
-                        <br>
-						<hr size=4 width="50%">
-						<br><br>
-                                       </div>
-    
-
-
-                    </p>
-					<div id="content3">
-                    <h4 style="text-align:center;
+        <!--opening page content-->
+        <div class="content clearfix" style="display: block;max-width:800px;">
+		   <!--section title-->
+			
+            <div class="section-title">
+                <h6 style="text-align:center;
           margin-top:40px;
-          font-family:myriadprol;
-          font-size:22px;
+          font-size:20px;
           width:90%;
-          max-width:600px;
+          max-width:640px;
           margin-left:auto;
-          margin-right:auto;">
-                        Use this fastest and simplest to do app for assigning to do items to yourself and your team right from within the chats.
-                    </h4>
-                		
-                    </center>
-                    <a id="About"></a>
-                    <p style="font-family:myriadprol;padding-top:10px;font-size:22px;margin-top:40px;
-          font-family:myriadprol;
-          font-size:22px;
-          width:90%;
-          max-width:600px;
-          margin-left:auto;
-          margin-right:auto;">One of our favourite current use cases of this app. <b>Making chats more productive and accountable.</b>  <a href="http://blog.todoed.co/post/137405816242/todoed-use-cases" style="text-decoration:none" target="_blank"> Here</a> are our others.
-				</p>
-                  <!--   <h1 style="color:#000000;font-family:myriadprol;display:block;margin-bottom:40px;vertical-align:middle;">Making chats more productive and accountable</h1>-->
-                </div>
-				<br><br>
-                <center>
-                    <img src="assets/images/1.jpg" style="max-width:95%;height:auto;display:block;" />
-                </center>
+          margin-right:auto;">At our core, we are developing a product called MyIdealist, Where world meets ideas.
+                    <span><p> It will be launched soon.</span></h6>
+                </h3>
+                <br/>
+				
+				<div align="justify" style=" line-height: 35px;font-size: 22px;font-style:'Segoe UI Light';width:90%;max-width:800px;display:block;margin:auto;">
+                <span>Preseed is the name of MyIdealist's own volunteer community of entrepreneurs and potential entrepreneurs 
+				<span>MyIdealist's own volunteer community of entrepreneurs and potential entrepreneurs product. But MyIdealist</span>
+				<span>is not just about codes, it is a culture of globally distributed teams, living in ideas, faith and action. </span>
+				</h6> </div>
+                </br>
+               <h6 align="center" style="width:90%;max-width:800px;display:block;font-size:22px;margin:auto;">
+                    <span>Read <a href="https://medium.com/the-preseed/my-last-10-years-for-my-whole-lifetime-b2cf937533a1#.47gesg5xv" style="none"><strong> this</a></strong> note from our founder. </span>
+                    </strong>
+                </h6>
 
-                
-                
-                <div style="width:60%;margin-left:auto;margin-right:auto;text-align:justify;margin-top:20px;font-family:myriadprol;">
-                  <!--  <hr>
-                    <h4 style="text-align:center;">Some ways of using this product</h4>
-                    <ul style="font-size:18px;list-style-type:circle;margin-bottom:40px;">
-                        <li>Use Todoed to create todos/tasks instantly.</li>
-                        <li>Use Todoed to delegate todos/tasks instantly, without needing to switch screens or apps.</li>
-                        <li>Clip text from anywhere on the browser and convert it into a todo.  Works on any text - gmail, fb, yammer, and absolutely any where on the browser.</li>
-                        <li>Just drop down from the chrome extension to view your own todos in the simplest and fastest possible way.</li>
-                        <li>Mark todos as important.</li>
-                        <li>Edit this text or task on Todoed anytime.</li>
-                        <li>Full view page allows you to view todos delegated to and todos delegated by, and also search tasks right there.</li>
-                        <li style="color:#bbb;">Use Todoed as a the most unique bookmarking experience (Coming Soon)</li>
-                        <li style="color:#bbb;">Use Todoed to add to asana, readability, kippt, pocket, etc. (Coming Soon)</li>
-                        <li style="color:#bbb;">Do all of the above on the mobile and all other such devices (Coming Soon)</li>
-                    </ul>-->
-                    <h4 style="color:#000;text-align:center;font-family:myriadprol;font-size:22px;
-          width:90%;
-          max-width:600px;
-          margin-left:auto;
-          margin-right:auto;">We are working very hard to turn this into an extraordinary tool for facilitating global productivity one day. <b>What you see of Todoed today is only the tip of the iceberg.</b></h4>
-                    <br>
+                <br>
+				<br>
+				<h6 style="font-style:Segoe UI Light">NOW KNOW PRESEED</h6>
+				<center style="font-family:'opensans';font-size:18px;align:justify;display:block">Our own little world of ideas. </center>
+			<br>	
+			<center><a href="#bottom"><img src="images/gallery/arrowdown.png"></a></center>
+			<br>
+					<hr size=4 width="50%">
+        </div>    <!--end p1 content-->
+   </div>
+   </div>
+<!--start wrapper-->
+<a id="bottom"></a>
+    <div id="wrapper">
+       <!--start header-->
+        <div class="header header-main">
+            <div class="inner">
+                <div class="logo-container">
+                    <div class="logo">
+                        <a class="navigateTo" href="#homepage">
+                            <img src="images/Nnavbarlogo.png" style="PADDING-TOP: 10px" title="Home" alt="" />
+                        </a>
+                    </div>
                 </div>
+
+                <!--mobileMenu toggle-->
+                <div class="mobileMenuToggle">
+                    <a href="#"></a>
+                </div>
+ <!--navigation-->
+                <ul class="navigation">
+                    <li><a class="navigateTo" href="#homepage">Home</a>
+                    </li>
+                    <li><a class="navigateTo" href="#About">We Do</a>
+                    </li>
+                    <li><a class="navigateTo" href="#We-Are">We Are</a>
+                    </li>
+                    <li><a class="navigateTo" href="http://preseed.in/media" target="_blank">Media Network</a>
+                    </li>
+                    <li><a class="navigateTo" href="#contact">Contact Us</a>
+                    </li>
+                    <li><a class="navigateTo" href="#Patron">Support Us</a>
+                    </li>
+                    <li class="hov"><a title="Medium" href="https://medium.com/@nishchal/publications" target="_blank"><!--<img src="images/gallery/me3.png"   width="18px" class="hov"  style="margin-top:40%"/>--></a>
+                    </li>
+                    <li>
+                    <a title="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="&#xe004;" style="font-size:16px;"></a>
+                    </li>
+                    <li>
+                    <a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="&#xe002;" style="font-size:16px;"></a>
+                    </li>
+                    <li>
+                        <a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="&#xe003;" style="font-size:16px;"></a>
+                    </li>
+
+                </ul>
             </div>
         </div>
-    </div>
-    <br><br>
-    
-	    <!--<div class="carousel-inner">
+        <!--end header-->
 
-        <div class="item active" style="background-color:#ffffff;">
+       
+        <!--start homepage-->
+        <div id="homepage" class="homepage section">
 
-            <!--  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
 
-            <div class="container-fluid">
-                <!--<center><h2 style="margin-top:100px;color:#000000;font-family:myriadprol;line-height:1.4em">Now use this fastest to do list as the first point of reference for organising your tasks on task management tools like asana, producteev, todoist etc. if you use these tools. However, we notice that for some of us Todoed is more than enough to keep us on top of our tasks.</h2>
-    </center>-->
-                <center>
-                   <!-- <hr size=4 width="50%">
-                    <!--<h1 style="color:#000000;font-family:myriadprol;padding-top:10px;display:block;padding-bottom:10px;vertical-align:middle;margin-top:0;">As seen in</h1>
-                    <div style="margin-top:25px;margin-bottom:45px" id="links">
-                        <!--<a href="http://www.crunchbase.com/product/todoed-2" target="_blank">
-                            <img src="assets/images/crunch_base.png" alt="crunch base" style="padding:20px">
-                        </a>-->
-                        <!-- pcworld   -->
-                        <!--<a href="http://yourstory.com/2014/08/smart-to-do-lists-todoed/" target="_blank">
-                            <img src="assets/images/5.png" alt="Your story" style="width:180px;height:108px;padding:20px">
-                        </a>-->
+            <!--start slider-->
+           <div id="epicSlider1" class="epicSlider theme-default slider-wrapper" style="margin-bottom:50px;">
+                <div id="slides">
+                    <img src="images/1.jpg" alt="Image 1" title="#html-content1"/>
+                </div>
 
-                       
+                <!--graphic logo-->
+                 <div class="epic-graphic logo-homepage" id="html-content1" >
+                    <a class="navigateTo" href="#We-Inspire"></a>
+                 </div> 
 
-                        <!--<a href="http://launchlist.co/item/todoed" target="_blank">
-                            <img src="assets/images/launch_list.png" alt="launch list" style="padding:20px;padding-bottom:30px;">
-                        </a>
-						<br>
-                        <a href="http://www.lifehack.org/282512/11-tools-for-productive-individuals" target="_blank">
-                            <img src="assets/images/3.png" alt="Lifehack.org" style="padding:20px">
-                        </a>
-                         <a href="http://www.cnet.com/how-to/turn-text-into-tasks-with-chrome-extension-todoed/" target="_blank">
-                            <img src="assets/images/send.png" alt="CNET" style="padding:20px;width:120px;height:120px">
-                        </a>
-                        <a href="http://economictimes.indiatimes.com/small-biz/startups/how-nishchal-kesarwani-of-todoed-co-wants-to-change-the-way-we-plan-our-tasks/articleshow/48870028.cms" target="_blank">
-                            <img src="assets/images/2.png" alt="Economic times" style="width:220px;height:59px;padding:20px">
-                        </a>
-                        <a href="http://www.pcworld.com/article/2910738/todoed-makes-creating-task-lists-as-easy-as-a-right-click.html" target="_blank">
-                            <img src="assets/images/4.png" alt="PC world" style="padding:20px">
-                        </a>
-                        <br>
-						<hr size=4 width="50%">
-						<br><br>
-                        <br><br>
-                    </div>-->
-    
-    <!-- Indicators -->
-	<a id="Demo"></a>
-    <div class="carousel-inner" id="chat">
 
-        <div class="item active" style="background-image:url('assets/images/vichy_@2X.png');background-repeat:repeat;width:100%;display:block;height:auto;-webkit-box-shadow: 0 0 10px white inset;
-        box-shadow: 0 0 10px white inset;">
-            </br>
-            </br>
-            <center>
+                <div id="caption">
+                    
+			<span style="font-family:'Dancing Script', cursive; color:#fff;line-height:30px;text-shadow:1px 1px 10px #000;">Before Preseed, you had a mere will to do something out of the ordinary.
+                        <br/>Now you will have a rock solid idea to do.</span>
+						
+                </div>
+                <!--
+                <div>
+                  <img src="images/Nblackbacklogo.png"  alt="" style="opacity:0.6;"/>
+                </div>-->
                 
-                <div id="video-head" style="display:block;color:black;padding:0 0 40px;width:52%;text-align:center;font-size:42px;font-family:myriadprol;height:auto;">
-                    <h3 style="margin-bottom:25px;line-height:30px;">When you have a thought or a task, you should be able to instantly not only share it as an instant message or an email, you should also be able to delegate it at the instance of sharing it.</h3>
-                    <span>View the Demo</span>
-                </div>
-				
-                <div id="tagline" style="display:block;color:black;padding:2px 0 20px;width:100%;text-align:center;text-shadow:0 0 1px white;font-size:16px;">
-                    <span>It will only take a minute to watch it</span>
-                </div>
-                <div class="row clearfix">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                <div id="vid" class="video-container" style="border:none;">
-                    <iframe  style="margin-bottom:30px;border:5px groove #7a7a7a" src="https://www.youtube.com/embed/Ck4VCK5h_gg" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                </div>
-                </div>
-                <h3 id="h22" style="color:black;text-align:center;text-shadow:0 0 2px white;font-size:54px;font-family:myriadprol;margin-top:10px;padding-bottom:60px;">
-                    <em>Let’s make our life simpler.</em>
-                </h3>
-            </center>
 
+                
+
+                <!--caption 3-->
+
+            </div>
+            <!--end slider-->
+        </div>
+
+        <!--end homepage-->
+
+       
+
+        <div id="We-Inspire" class="teaser section page" style="background: url(images/gallery/openhack.jpg) no-repeat center center scroll ; -webkit-background-size: 100% 100%; background-size:100% 100% ;height:auto;" >
+            <div class="teaser-title" style="margin-top:0.05% !important;margin: auto;text-align: center;width:100%;text-align:center;">
+                <h4 style="margin:150px auto 100px;">WE INSPIRE
+                    <br/>
+                    <span style="display:block;margin-top:20px;text-shadow: 0 0 8px #fff;" class="taglinehome">IDEAS | FAITH | ACTION</span>
+                    <font size=5>
+                        <span style="display:block;margin-top:100px;width:80%;max-width:800px;margin-left: auto;margin-right:auto;">The results of our actions are showcased at
+                            <br />
+ <a href="http://startups.preseed.in/" target="_blank" style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)">
+                <span class="btn btn-large btn-success" style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300">PRESEED STARTUPS</span>
+                </a>
+						<!--	<a style="color:#fff000;background:#FF0066" href="http://startups.preseed.in/" target="_blank">
+                                <span style="text-align:center; font-weight:bolder;padding:2%;"><input type="button" value="Preseed Startups"/></span>
+                            </a>-->
+                            <!--All Preseed Projects are very likely get funded <br/>as soon as they get customer validated. (Big deal? No,<br/>this is among the easier things we do)-->
+
+                        </span>
+                    </font>
+                </h4>
+            </div>
+        </div>
+
+
+
+
+    <!--start page 1-->
+    <div id="About" class="page odd section">
+
+        <!--start p1 content-->
+        <div class="content clearfix" style="display: block;max-width:1200px;">
+            <!--section title-->
+            <div class="section-title">
+                <h3>WE
+                    <span>DO</span>
+                </h3>
+                <br/>
+                <h6>
+                    <span style="display: block;margin:30px auto;width:90%;">We engage with people over our own progressive ideas, opportunities or mere dreams, to enable them to build those dots with us, into something more meaningful.</span>
+                </h6>
+
+            </div>
+            <div class="round-thumbs" style="width:100%;display:block;margin:auto;text-align:center;">
+
+                <div class="column_one_half team" style="display:inline-block;margin:auto;width:100%;float:none;max-width:500px;">
+                    <div class="round-thumb-container">
+                        <div class="round-thumb a2">
+                            <a title="" href="http://weblab.preseed.in" target="_blank">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <h5><u>Preseed Web Lab
+                    </u></h5>
+                    <h6>
+                        <span>The food for our own soul.
+                            <br/>Here we build upon our
+                            <br/>own consumer web ideas
+                            <br/>with great design and
+                            <br/>user values.</span>
+                    </h6>
+                    <!--social networks-->
+                </div>
+                <div class="column_one_half last team clearfix" style="display:inline-block;float:none;width:100%;margin:auto;max-width:500px;">
+                    <div class="round-thumb-container">
+                        <div class="round-thumb a3">
+                            <span>
+
+                                <a title="" href="http://entrepreneurlab.preseed.in/" target="_blank">
+                                    <img class="lazy" src="" alt="" />
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <h5><u>Preseed Entrepreneur Lab
+                    </u></h5>
+                    <h6>
+                        <span>Here we build upon our
+                            <br/>ideas about anything
+                            <br/>with anyone beyond
+                            <br/>the scope of
+                            <br/>Preseed web lab.</span>
+                    </h6>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <center>
+                    <h3 style="display: block;margin:40px auto;"><a href="https://medium.com/the-preseed/highlight-2014-our-strong-foundation-b6276a335c1e" style="font-weight:normal;text-shadow: 0 0 1px #FF005A;" target="_blank"><u>Preseed story so far</u></a>
+                    </h3>
+                </center>
+            </div>
+
+            <div class="clearfix" style="max-width:1200px;display:block;margin:auto;text-align:center;"></div>
+        </div><!-- p1 content -->
+
+    </div><!--start page-->
+
+    <div id="We-Are" class="page even section">
+        <!--start p1 content-->
+        <div class="content clearfix" style="max-width:1200px;margin:auto;display: block;">
+            <!--section title-->
+            <div class="section-title">
+                <h3>WE
+                    <span>ARE</span>
+                </h3>
+
+                <br/>
+
+
+            </div>
+            <h4 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">A bunch of believers on a mission to empower those who have the will to do something
+                <br/>
+                <strong class="darkGray" style="display:block;margin:20px auto;">OUT OF THE ORDINARY</strong>
+            </h4>
+            <br>
+            <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
+                <span>We believe that one of the most understated reasons, or largely a non-stated reason to fail is - to not start. Leave the matter of success and failure to perseverance; there is nothing more to success and failure.
+                    <br/>THIS IS THE FUNDAMENTAL 'the ideology of Preseed' IS FOUNDED UPON  </span></h6>
+            <br>
+          
+            <div class="glyph" align="center">
+                <a title="Team" href="team.html" target="_blank">
+                    <div align="center" style="font-size:40px;" class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
+                </a>
+                <br>
+
+                <a href="http://preseed.in/team" style="padding-top:10px;font-size:15px" target="_blank"><u>OUR TEAM</u></a>
+                <br>
+                <!-- <h6 style="padding-top:10px;"><span>OUR TEAM</span></h6>-->
+                </br>
+                <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
+                    <span>If we manage to give you a start,we have done for you what we have started Preseed to do.</span>
+                    <!--</strong>-->
+                </h6>
+
+                <div id="medium-embed" style="width:90%;display: block;margin:50px auto 0;">
+                    <script async src="https://static.medium.com/embed.js"  type="text/javascript"></script>
+                    <a class="m-collection" data-collapsed="true" ; href="https://medium.com/the-preseed">The Preseed </a>
+                </div>
+
+            </div>
+
+        </div>    <!--end p1 content-->
+   </div> 
+
+
+   <!--start teaser-->
+    
+    <div id="teaser-1" class="teaser" style="background-image: url(images/gallery/hippies.jpg);-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;height:auto;background-position:center;">
+        <div class="teaser-title" style="margin:auto;height:auto;overflow:hidden;display: block;">
+            <h6 style="display: block;width: 90%;max-width: 1200px;margin: 150px auto 100px;">
+                <strong class="white">
+                    <span style="text-transform:uppercase;">Here everyone is building upon an idea or an ideology</span>
+                </strong>
+                <br/>
+                <br/>
+                <strong class="green" style="-ms-word-break: break-word;word-break:break-word;">This is our (COUNTER)CULTURE where people BUILD before they learn, earn or burn</strong>
+                <br/>
+                <br/>
+                <br />
+                <a href="https://www.facebook.com/photo.php?fbid=440961039276529&set=a.361372230568744.78162.175348422504460&type=3&theater" target="_blank" style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)">
+                <span class="btn btn-large btn-success" style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300">GALLERY</span>
+                </a>
+            </h6>
+
+            <div class="section-button" style="display:block;position:relative;">
+                <a class="page-up navigateTo" href="#About"></a>
+            </div>
+
+        </div>
+        <!--section-button-->
+
+    </div>
+    <!--end teaser-->
+
+
+    <div id="contact" class="page even section">
+        <div class="content clearfix" style="max-width:1200px;margin:auto;">
+
+            <!--section title-->
+            <div class="section-title">
+                <h3>CONTACT
+                    <span>US</span>
+                </h3>
+                <h6>START A CONVERSATION
+                    <span>WE'LL TAKE IT FORWARD</span>
+                </h6>
+
+            </div>
+            <div id="three-button" style="block;max-width:1000px;margin:50px auto;text-align:center;">
+
+                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
+                    <a title="Facebook" href="https://www.facebook.com/messages/thepreseed" target="_blank" style="color:#ffffff; ">
+                        <center>
+                            <button class="btn btn-twitter btn-large btn-succes" style="padding-left:83px;padding-right:83px;padding:0;width:210px;height:65px;text-align:center;"><i class="fa fa-facebook"></i>&nbsp &nbspMessage </button>
+                        </center>
+                    </a>
+                </div>
+                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
+                    <a title="Twitter" href="https://twitter.com/thepreseed" target="_blank" style="color:#ffffff; ">
+                        <center>
+                            <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px;padding: 0;width: 210px;height: 65px;text-align: center;"><i class="fa fa-twitter"></i>&nbsp &nbsp@thepreseed</button>
+                        </center>
+                    </a>
+                </div>
+                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
+                    <a title="Email" href="mailto:love@preseed.in" target="_blank" style="color:#ffffff; ">
+                        <center>
+                            <button class="btn btn-twitter btn-large btn-succ" style="padding: 0;width: 210px;height: 65px;text-align: center;"><i class="fa fa-envelope-o"></i>&nbsp &nbsp love@preseed.in</button>
+                        </center>
+                    </a>
+                </div>
+                <!--<div class="column_one_third" style="display:inline-block;float:none;width:auto;">
+                    <a title="f65" href="" target="_blank" style="color:#ffffff; ">
+                        <center>
+                            <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px;padding: 0;width: 210px;height: 65px;text-align: center;">F6S</button>
+                        </center>
+                    </a>
+                </div>
+                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
+                    <a title="Angellist" href="https://angel.co/preseed" target="_blank" style="color:#ffffff; ">
+                        <center>
+                            <button class="btn btn-twitter btn-large btn-succes" style="padding-left:83px;padding-right:83px;padding:0;width:210px;height:65px;text-align:center;"><i class="fa fa-angellist"></i>&nbsp &nbspAngellist</button>
+                        </center>
+                    </a>
+                </div>-->
+                
+                
+
+            </div>
 
             <center>
-                <!-- <h3 id="h11" style="color:#ffffff;text-shadow:0 0 2px white;text-align:center;line-height:1.2;font-size:54px;font-family:myriadprol;"><em>Why to complicate things?</em></h3>
-     <h3 id="h22" style="color:#ffffff;text-align:center;text-shadow:0 0 2px white;line-height:1.5;font-size:54px;font-family:myriadprol;margin-top:10px;">
-     <em>Let’s make our life simpler.</em></h3>
-     <h3 id="h33" style="display:block;color:#ffffff;text-align:center;text-shadow:0 0 2px white;line-height:1.5;font-size:48px;font-family:mayridprol;padding:5px 5px 10px 5px;margin-top:10px;"><em>Convert any text while working on any platform into actionable tasks.</em></h3> -->
+                <h5 style="text-align:center;">
+                    <span>'COZ CONTACT FORMS ARE SO 1990s</span>
+                </h5>
+            </center>
+            <br>
+            <br>
+            <center>
+                <a title="Subscribe" href="http://justbuild.preseed.in" target="_blank" style="color:#ffffff; ">
+                    <center>
+                        <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px">Subscribe to Preseed Newsletter</button>
+                    </center>
+                </a>
+               
             </center>
         </div>
+       
+       <!--end p3 content-->
     </div>
-    <!-- /.carousel-inner -->
+           
 
-    <!-- Indicators -->
-    <div class="carousel-inner">
+    <div id="Patron" class="teaser section page teaser31" style="background-image: url(images/gallery/bkimg.jpg);-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;opacity:0.9;filter:alpha(opacity=90);">
+        <div class="teaser-title" style="display: block;height:100%;">
+            <h6 style="display:block;width:90%;margin: 100px auto;text-align: center;max-width:1000px;">
+                <div style="-ms-word-break: break-word;word-break:break-word;">
+                    <strong class="darkGray" style="display: inline-block;height:auto">
+                        <span>
+                            <strike>inventor.visionary.musician.engineer.entrepreneur.thinker</strike>
+                        </span>
+                    </strong>
+                    <strong class="yellow" style="display: inline-block;">ARTIST</strong>
+                    <br/>
+                </div>
+                <br/>
+                <strong class="darkGray" style="display: block;">
+                    <span>WE ARE ON A JOURNEY TO INSPIRE A WHOLE GENERATION</span>
+                </strong>
 
-      <!--  <div class="item active" style="background-color:#ffffff;">
+                <a style="font-size:44px; float:inherit; text-decoration:none; border-bottom=3px;" href="http://patron.preseed.in/" target="_blank">
+                    <span class="btn btn-large btn-primary custombtn patronizebtn" style="padding: 20px;margin-top: 50px;display: inline-block;margin-left: auto;margin-right: auto;font-size: 25px;text-shadow: 0 0 2px #fff;">PATRONIZE US</span>
+                </a>
+                <br/>
+                <br/>
+                <strong class="white patronizetext">OR</strong>
+                <br/>
+                <br/>
+                <a style="font-family:rescript;float:inherit; text-decoration:underline; border-bottom=3px;" href="http://preseedprints.com/" target="_blank">BUY OUR POSTERS</a>
+               <br/>
+                <br/>
 
-            <!--  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
-
-          <!--  <div class="container-fluid">
-                <!--<center><h2 style="margin-top:100px;color:#000000;font-family:myriadprol;line-height:1.4em">Now use this fastest to do list as the first point of reference for organising your tasks on task management tools like asana, producteev, todoist etc. if you use these tools. However, we notice that for some of us Todoed is more than enough to keep us on top of our tasks.</h2>
-    </center>-->
-               <!-- <center>
-                    <hr size=4 width="50%">
-                    <h1 style="color:#000000;font-family:myriadprol;padding-top:10px;display:block;padding-bottom:10px;vertical-align:middle;margin-top:0;">As seen in</h1>
-                   <!-- <div style="margin-top:25px;margin-bottom:45px" id="links">
-                        <!--<a href="http://www.crunchbase.com/product/todoed-2" target="_blank">
-                            <img src="assets/images/crunch_base.png" alt="crunch base" style="padding:20px">
-                        </a>-->
-                        <!-- pcworld   -->
-                        <!--<a href="http://yourstory.com/2014/08/smart-to-do-lists-todoed/" target="_blank">
-                            <img src="assets/images/5.png" alt="Your story" style="width:180px;height:108px;padding:20px">
-                        </a>-->
-
-                       
-
-                        <!--<a href="http://launchlist.co/item/todoed" target="_blank">
-                            <img src="assets/images/launch_list.png" alt="launch list" style="padding:20px;padding-bottom:30px;">
-                        </a>
-
-                        <a href="http://www.lifehack.org/282512/11-tools-for-productive-individuals" target="_blank">
-                            <img src="assets/images/3.png" alt="Lifehack.org" style="padding:20px">
-                        </a>
-                         <a href="http://www.cnet.com/how-to/turn-text-into-tasks-with-chrome-extension-todoed/" target="_blank">
-                            <img src="assets/images/send.png" alt="CNET" style="padding:20px;width:120px;height:120px">
-                        </a>
-                        <a href="http://economictimes.indiatimes.com/small-biz/startups/how-nishchal-kesarwani-of-todoed-co-wants-to-change-the-way-we-plan-our-tasks/articleshow/48870028.cms" target="_blank">
-                            <img src="assets/images/2.png" alt="Economic times" style="width:220px;height:59px;padding:20px">
-                        </a>
-                        <a href="http://www.pcworld.com/article/2910738/todoed-makes-creating-task-lists-as-easy-as-a-right-click.html" target="_blank">
-                            <img src="assets/images/4.png" alt="PC world" style="padding:20px">
-                        </a>-->
-                         
-                        
-                    </div>
-					<br>
-                    <hr size=4 width="50%">
-                    <center><h1 style="color:#000000;font-family:myriadprol;padding-top:10px;display:block;padding-bottom:10px;vertical-align:middle;margin-top:0;">Twitter love for Todoed</h1></center>
+              
                     
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height:200px;">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        <div class="carousel-inner" role="listbox" style="margin-top:0px;">
-                            <div class="item active">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" lang="en"><p>Just used ToDoed and so far loving it <a href="http://t.co/zV3xH7gvFp">http://t.co/zV3xH7gvFp</a> <a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a> <a href="https://twitter.com/Nishchal">@nishchal</a></p>&mdash; Dinesh (@dinwal) <a href="https://twitter.com/dinwal/status/523679988709462016">October 19, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a> damn that shits dope downloading now! --&gt; <a href="http://t.co/9reG4tc3n7">http://t.co/9reG4tc3n7</a></p>&mdash; Nate Ruben (@NateBPRuben) <a href="https://twitter.com/NateBPRuben/status/527570791358267392">October 29, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/megha_jh">@megha_jh</a> <a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a> just hadn&#39;t a moment to check it out, I like the idea. When will it be available in other browsers?</p>&mdash; Chip Correra (@ChipCorrera) <a href="https://twitter.com/ChipCorrera/status/528627756779966464">November 1, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/Todoed_pwl">@todoed_pwl</a> that looks promising :) all the best!</p>&mdash; Rahul Banker (@bankerrahul) <a href="https://twitter.com/bankerrahul/status/524443196651085825">October 21, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" lang="en"><p>So far with <a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a>: Wish the extension allowed deadlines. However, simple design &amp; great Chrome extension!&#10;<a href="https://twitter.com/hashtag/startupschallenge?src=hash">#startupschallenge</a> <a href="https://twitter.com/hashtag/startups?src=hash">#startups</a></p>&mdash; Charlotte Lewis (@howdoyoudo22_) <a href="https://twitter.com/howdoyoudo22_/status/516822939556003840">September 30, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a> - a wonderful tool for brain storming and getting things done, specially for scattered work environment. Simple Fast Effective !</p>&mdash; Sandip Mukherjee (@SandyAquarian) <a href="https://twitter.com/SandyAquarian/status/540490681240653826">December 4, 2014</a></blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div style="width: 62%;max-width:800px;margin: 10px auto;">
-                                    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/Todoed_pwl">@Todoed_pwl</a> Very nice and smartly made app, this is starting to make me more productive. Must use..</p>&mdash; Chirag Dodiya (@chirag_dodiya) <a href="https://twitter.com/chirag_dodiya/status/540811852444225536">December 5, 2014</a></blockquote>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="background-image:none;">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background-image:none;">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </center>
-                <br><br>
-                <center>
-                <h3>See what <a href="https://twitter.com/Todoed_pwl/timelines/585107612292747264" target="_blank">people are saying</a> about Todoed</h3>
-                </center><br>
-				                 <!--subsriptionform-->
-                <!--<h4 id="subs-head" style="color:#000000;font-family:myriadprol;width:85%;text-align:center;margin:0 auto 10px auto;font-size:22px;padding-bottom:30px;height:auto;padding-top:60px;">Subscribe to our newsletters and updates!</h4>-->
-                 <hr width="50%" size="5"><h4 style="color:#000000;font-family:myriadprol;width:85%;text-align:center;margin:0 auto 10px auto;font-size:22px;padding-bottom:40px;height:auto;padding-top:60px;">Subscribe to our newsletters and updates!</h4>
-				                <div id="mc_embed_signup" style="
-          width:100%;
-          margin: 0 auto 0 auto;
-          text-align:center;
-          line-height:0%;">
-                    <form action="http://preseed.us3.list-manage.com/subscribe/post?u=6d760d307e7d9e29e2344532b&amp;id=6d36c66925" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="text-align:center;" novalidate>
-
-                        <form class="form-inline" role="form">
-                            <div class="input-group col-xs-4">
-
-                                <input type="email" value="" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Enter your Email ID" style="display:inline-block;border-radius:40px;padding: 20px;">
-                                <button type="submit" id="sendinvi" class="btn btn-default btn-info" style="display:inline-block;border-radius:40px;padding: 8px 13px; margin:5px; font-size:17px;background-color:#4689E9" onclick="message()">Subscribe</button>
-                            </div>
-                        </form>
-
-                        <!--End mc_embed_signup-->
-                        <div id="msg" style="display:none">
-                            <br>
-                            <h5 style="font-family:arial;color:#00CC66;margin-left:20px;">To complete the subscription process, please click the link in the email we just sent you.</h5>
-                        </div>
-                        <br/>
-                        <br/>
-						
-                </div>
-                <br>
-                <br>
-                <hr  width="50%" size="5"><br><br>
                 
-                <center>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <!--<a href="https://twitter.com/todoed_pwl" target="_blank" style="display:inline-block;">
+              
 
-                        <!---Twitter starts -->
-
-                        <!--<div id="share-btn" style="display:block;max-width:400px;margin:0 auto;text-align:center;height:auto;">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="http://weblab.preseed.in/projects/todoed/" data-text="@todoed_pwl is a fundamentally different todo listing app by @thepreseed . Check it out." data-hashtags="tasklist" data-align="left">Tweet</a>
-
-                            <script>
-                            ! function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0],
-                                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + '://platform.twitter.com/widgets.js';
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, 'script', 'twitter-wjs');
-                            </script>
-
-                            <script>
-                            ! function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0],
-                                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + '://platform.twitter.com/widgets.js';
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, 'script', 'twitter-wjs');
-                            </script>
-							
-                            <a href="https://twitter.com/Todoed_pwl" class="twitter-follow-button" data-show-count="false" data-size="large" data-align="right">Follow @Todoed_pwl</a>
-                        </div>
-                        <!---Twitter ends -->
-                        <br>
-									
-                        <!--F6S & Social Button-->
-												<center>
-						<a href="http://www.twitter.com/todoed_pwl" target="_blank"><div style="display:inline-block" class="twitter-hover social-slide"></div></a>
-						<a href="http://www.facebook.com/todoed.co" target="_blank"><div style="display:inline-block" class="facebook-hover social-slide"></div>
-						<a href="http://www.pinterest.com/todoed" target="_blank"><div style="display:inline-block" class="pinterest-hover social-slide"></div>
-						<a href="http://blog.todoed.co/ " target="_blank"><div class="tumblr-hover social-slide" style="display:inline-block" ></div>
-						
-                
-                </center>
-				<br>
-                        <a href="http://www.f6s.com/todoed?follow=1" target="_blank" title="Follow Todoed on f6s">
-                            <img src="https://www.f6s.com/images/follow-grey.png" border="0" width="72" height="20 " alt="Follow Todoed on f6s" style="width: 72px; height: 20px; padding: 0px; margin: 0px;" />
-                        </a>
-                        
-                        <!--F6S End here-->
-
-                       <!-- <div style="display:block;max-width:300px;text-align:center;margin:20px auto 0;" id="fb-like">
-                            <div class="fb-like" id="fl" data-href="https://www.facebook.com/Todoed.co" data-width="250" data-layout="standard" data-action="like" data-show-faces="true" data-content-align="center" data-share="true" data-colorscheme="light"></div>
-                        </div>-->
-                        <br><br>
-                        <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Todoed" data-url="https://www.todoed.co" data-count="vertical" data-style="facebook">Vote on Hacker News</a>
-<script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
-                        <br>
-                        <br>
-                        <br><hr><br><br>
-                        
-                        <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:150%;color:#979797;line-height:150%">
-                         Please fill up our<a  class="marketing-byline"style="text-align:center;font-family:arial;font-size:100%;color:#428BCA;line-height:150%" href="https://todoed.typeform.com/to/GsVnYq"> high impact feedback </a> form for Todoed. We will be in a state of gratitude towards you forever.
-                
-                            <br><br><br>
-							<div align="center" class="container" style="display:block;margin:10px auto 50px;height:auto;">
-                    <div id="div1" style="display:inline-block;max-width:200px;margin-right:20px;">
-                        <a href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" target="_blank">
-                            <img src="assets/images/aows.png" style="display:inline-block;vertical-align:middle;max-width:280px;height:auto;" />
-                        </a>
-                    </div>
-                </div>
-							
-                           <!-- <a href="https://todoed.typeform.com/to/GsVnYq" class="btn btn-info btn-small" target="_blank" style="box-shadow:none;background-color:#4689E9;border-radius: 40px; padding: 15px 20px;">
-                                <span style="font-size:24px; font-family:arial;background-color:#4689E9">Feedback Form</span>
-                            </a>
-							<br>
-							<br>
-                  <!--  <h4 class="marketing-byline" style="font-size:33px;text-align:center;font-family: 'Just Another Hand', cursive;letter-spacing:1px;">By the way, have you ever felt an urge that you should create a to do list for yourself but haven't yet started?</h4>
-					<h4 class="marketing-byline" style="font-size:33px;text-align:center;font-family: 'Just Another Hand', cursive;letter-spacing:1px;">Download Todoed and you will find yourself started already.</h4>-->
-                     <!--   <a href="https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme" class="btn btn-info btn-small" target="_blank" style="box-shadow:none;background-color:#4689E9;border-radius: 40px; padding: 15px 20px;">
-                                <span style="font-size:24px; font-family:arial;background-color:#4689E9">Download</span>
-						</a>-->
-                        </p>
-
-                        <br><hr>
-
-                        <div id="bottom-section">
-                            <div id="todoed-story" style="display:block;max-width:500px;margin:0 auto;">
-                                <font size="55px" style="font-size:24px;padding:10px 0px 30px 0px;display:block;max-width:400px;margin:0 auto;text-align:center;">
-                                 <a id="Team"></a>   <a href="http://todoed.teampage.io/" target="_blank" style="text-decoration:none;">Team</a> behind Todoed
-                                </font>
-                            </div>
-                                                        <div id="angellist" style="display:block;width:100%;">
-                                <div id="hand" style=" max-width:80px;margin:0 auto;padding-bottom:10px;display:block;">
-                                    <a href="https://angel.co/todoed" target="_blank">
-                                        <img src="assets/images/angel.jpg" style="width:60%;" alt="angelList" />
-                                    </a>
-                                </div>
-                                <div id="angellist-text">
-                                    <h4 style="width:80%;margin:0 auto;">
-                                        <a href="https://angel.co/todoed" target="_blank" style="text-decoration:none;">
-                                            Also, meet us on AngelList
-                                        </a>
-                                    </h4>
-                                </div>
-                            </div>
-                            
-                            <div id="todoed-story" style="display:block;max-width:500px;margin:0 auto;">
-                                <a href="https://medium.com/preseed-web-lab/dd71f9ec0a01" style="text-decoration:none;width:400px;" target="_blank">
-                                    <font size="55px" style="font-family: myriadprol;font-size:32px;padding-top:20px;display:block;max-width:400px;margin:0 auto;text-align:center;">Story behind
-                                        <strong>Todoed</strong>
-                                    </font>
-                                </a>
-                            </div>
-
-                            <br/>
-                            
-
-                            <div id="feedback">
+            </h6>
 
 
-                                <script type="text/javascript">
-                                FreshWidget.init("", {
-                                    "queryString": "&widgetType=popup",
-                                    "widgetType": "popup",
-                                    "buttonType": "text",
-                                    "buttonText": "Feedback",
-                                    "buttonColor": "white",
-                                    "buttonBg": "#4689E9",
-                                    "alignment": "2",
-                                    "offset": "400px",
-                                    "formHeight": "500px",
-                                    "url": "https://todoed.freshdesk.com"
-                                });
-                                </script>
-
-                            </div>
-							<center>
-                            <div id="footer">
-                            <div id="footer">
-                                <h4 style="font-family:myriadprol">a
-                                    <a href="http://weblab.preseed.in" target="_blank" style="font-family:myriadprol">
-                                        <strong>Preseed Web Lab</strong>
-                                    </a>project.
-                                    <br/>
-                                    <br/>
-                                    <small><a href="http://preseed.in/legal" target="_blank" title=""> Copyright © 2015 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a>
-                                    </small>
-                                </h4>
-
-                            </div>
+        </div>
+        <!--section-button-->
+        <div class="section-button">
+            <a class="page-up navigateTo" href="#Media-Network"></a>
+        </div>
+    </div> <!--end teaser-->
+<hr style="thick:3px;color:white;border:0">
 
 
 
-                            </br>
-                        </div>
+<div class="footerr" >
+	
+		<div id="leftfooter" style="padding:4%;">
+		<ul>
+			<li><a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5" target="_blank" style="font-size:14px;">FAQ</a><br><li>
+			<li><a href="http://preseed.in/team.html" target="_blank" style="font-size:14px;">Team</a><br><li>
+			<li><a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b" target="_blank" style="font-size:14px;">About Us</a><br></li>
+			<li><a href="http://projects.preseed.in/" target="_blank" style="font-size:14px;">Preseed Projects</a><br></li>
+			<li ><span style="color:#ff005a;font-size:14px" data-tooltip="Coming soon" data-placement="right" > All Projects</span><br /></li>
+			<li><a href="http://labs.preseed.in/"  style="font-size:14px;" target="_blank">Preseed Labs</a></li>
+			<li><a href="http://startups.preseed.in/"  style="font-size:14px;" target="_blank">Preseed Startups</a></li>
+		</ul>
+		</div>
+		<div id="rightfooter" style="padding:4%;">
+		<ul style="">
+		<li><iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thepreseed&amp;width=210px&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:20px;" allowTransparency="true"></iframe></li>
+		
+		<li><a class="twitter-follow-button" href="https://twitter.com/thepreseed" data-show-count="false" data-lang="en" style="font-size:0.8vw;font-size:1.6vh; width:100%;">Follow @thePreseed </a>			
+       </li>
+                           
+       
+		<li> <p style="font-size:14px;color:white;"><img src="images/contact.png" width="20px" height="20px" alt="contact" />Govind Garg:+91-9899535421 </p></li>
+		
+		<li><p style=" font-size:14px;color:white;">Meet us on<a href="https://angel.co/preseed" target="_blank" style="font-size:14px">  Angel list <img src="images/angellist.png" height="15" width="15"/> </a></p></li>
+		
+		
+		</ul>
+		</div>
+		
+		<div style="clear:both;" >
+		
+		
+	</div>
 
 
+    </div>
+    <!--end wrapper-->
+	<div style="background:#000000;">
+	<center><p style="text-align:center; background:#000000"><a href="http://preseed.in/legal" target="_blank" title="" style="color:#ff005a;text-decoration:none;font-size:14px;"> Copyright © 2015 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a><br /><br /></p></center>
+	</div>
 
+	<!-- <div style="background:black;width:100%;display:block;float:left;position:relative;color:white;">
+		<section style="width:35%;padding:3%;float:left;padding-left:12%;">
+		<a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">FAQ</a><br>
+		<a href="http://preseed.in/team.html" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">Team</a><br>
+		<a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">About us</a><br>
+		<a href="http://startups.preseed.in/" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">Preseed Startups</a><br>
+       <!--  To know our complete startup portfolio,<a href="https://angel.co/preseed" target="_blank" style="font-size:1.8vw;font-size:2.0vh;"> check </a> us out on angellist <img src="images/angellist.png" height="15" width="15"/><br> 
 
+		</section>
+		
+		<center><section style="width:30%;float:right;position:relative;padding:3%;padding-right:4%;">
+		
+		
+		
+		<div style="width:100%;position:relative;padding-top:0"><iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thepreseed&amp;width=210px&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:20px;" allowTransparency="true"></iframe></div>
+		<div style="width:100%;position:relative;padding-top:1%;float:left;">
+		<a class="twitter-follow-button" href="https://twitter.com/thepreseed" data-show-count="false" data-lang="en" style="font-size:0.8vw;font-size:1.6vh; width:100%;">Follow @thePreseed </a>
+		</div>			
+       <br>
+		<div style="width:100%;position:relative;padding-top:1%;clear:both;float:left;">
+		<img src="images/contact.png" width="20px" height="20px" alt="contact" style="float:left;" /> <span style="font-size:1.2vw;font-size:1.9vh;float:left;">Govind Garg: 9899535421</span>
+		
+		</div><br>
+		<div style="float:left !important;">
+		<p style=" font-size:1.7vw;font-size:1.9vh;">To know our complete startup portfolio,<a href="https://angel.co/preseed" target="_blank" style="font-size:1.8vw;font-size:2.0vh;"> check </a> us out on angellist <img src="images/angellist.png" height="15" width="15"/></p>
+		</div>
+		</section></center>
+		
+	</div> -->
+    
+	
+	
+	
+	<!--<div style="height:100%;width:100%;background:black;">
+	<footer style="background:black !important;height:20%;">
+	<div style="background:black;padding:5%;width:30%;height:100%;display:block;float:left;position:relative;color:white;">
+		<a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5">FAQ</a><br>
+		<a href="http://preseed.in/team.html">TEAM</a><br>
+		<a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b">ABOUT US</a><br>
+		
+	</div>
+	</footer>
+	
+	<footer style="background:black !important;height:20%;">
+	<div style="background:black;padding:5%;width:50%:height:100%;display:block;float:left;position:relative;color:white;">
+		<a href="">fb</a>
+		<a href="">twitter</a><br>
+		<img src="images/contact.png" width="20px" height="20px" alt="contact" />Govind Garg:
+	</div>
+		
+	</div>
+	</footer>
+	</div>-->
+	
+	
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1930971-6']);
+    _gaq.push(['_trackPageview']);
 
-                        <!-- Bootstrap core JavaScript
-    ================================================== -->
-                        <!-- Placed at the end of the document so the pages load faster -->
-                        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-                        <script src="dist/js/bootstrap.min.js"></script>
-                        <script>
-                            $('.carousel').carousel({
-                                interval: 5000
-                            });
-                        </script>
-                        <script src="assets/js/holder.js"></script>
-                        <!--mailchimpjs-->
-                        <!-- Begin MailChimp Signup Form -->
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 
-                        <script type="text/javascript">
-                        var fnames = new Array();
-                        var ftypes = new Array();
-                        fnames[0] = 'EMAIL';
-                        ftypes[0] = 'email';
-                        fnames[1] = 'FNAME';
-                        ftypes[1] = 'text';
-                        fnames[2] = 'LNAME';
-                        ftypes[2] = 'text';
-                        try {
-                            var jqueryLoaded = jQuery;
-                            jqueryLoaded = true;
-                        } catch (err) {
-                            var jqueryLoaded = false;
-                        }
-                        var head = document.getElementsByTagName('head')[0];
-                        if (!jqueryLoaded) {
-                            var script = document.createElement('script');
-                            script.type = 'text/javascript';
-                            script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-                            head.appendChild(script);
-                            if (script.readyState && script.onload !== null) {
-                                script.onreadystatechange = function() {
-                                    if (this.readyState == 'complete') mce_preload_check();
-                                }
-                            }
-                        }
-
-                        var err_style = '';
-                        try {
-                            err_style = mc_custom_error_style;
-                        } catch (e) {
-                            err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-                        }
-                        var head = document.getElementsByTagName('head')[0];
-                        var style = document.createElement('style');
-                        style.type = 'text/css';
-                        if (style.styleSheet) {
-                            style.styleSheet.cssText = err_style;
-                        } else {
-                            style.appendChild(document.createTextNode(err_style));
-                        }
-                        head.appendChild(style);
-                        setTimeout('mce_preload_check();', 250);
-
-                        var mce_preload_checks = 0;
-
-                        function mce_preload_check() {
-                            if (mce_preload_checks > 40) return;
-                            mce_preload_checks++;
-                            try {
-                                var jqueryLoaded = jQuery;
-                            } catch (err) {
-                                setTimeout('mce_preload_check();', 250);
-                                return;
-                            }
-                            var script = document.createElement('script');
-                            script.type = 'text/javascript';
-                            script.src = 'https://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-                            head.appendChild(script);
-                            try {
-                                var validatorLoaded = jQuery("#fake-form").validate({});
-                            } catch (err) {
-                                setTimeout('mce_preload_check();', 250);
-                                return;
-                            }
-                            mce_init_form();
-                        }
-
-                        function mce_init_form() {
-                            jQuery(document).ready(function($) {
-                                var options = {
-                                    errorClass: 'mce_inline_error',
-                                    errorElement: 'div',
-                                    onkeyup: function() {},
-                                    onfocusout: function() {},
-                                    onblur: function() {}
-                                };
-                                var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-                                $("#mc-embedded-subscribe-form").unbind('submit'); //remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-                                options = {
-                                    url: 'https://preseed.us3.list-manage.com/subscribe/post-json?u=6d760d307e7d9e29e2344532b&id=6d36c66925&c=?',
-                                    type: 'GET',
-                                    dataType: 'json',
-                                    contentType: "application/json; charset=utf-8",
-                                    beforeSubmit: function() {
-                                        $('#mce_tmp_error_msg').remove();
-                                        $('.datefield', '#mc_embed_signup').each(
-                                            function() {
-                                                var txt = 'filled';
-                                                var fields = new Array();
-                                                var i = 0;
-                                                $(':text', this).each(
-                                                    function() {
-                                                        fields[i] = this;
-                                                        i++;
-                                                    });
-                                                $(':hidden', this).each(
-                                                    function() {
-                                                        var bday = false;
-                                                        if (fields.length == 2) {
-                                                            bday = true;
-                                                            fields[2] = {
-                                                                'value': 1970
-                                                            }; //trick birthdays into having years
-                                                        }
-                                                        if (fields[0].value == 'MM' && fields[1].value == 'DD' && (fields[2].value == 'YYYY' || (bday && fields[2].value == 1970))) {
-                                                            this.value = '';
-                                                        } else if (fields[0].value == '' && fields[1].value == '' && (fields[2].value == '' || (bday && fields[2].value == 1970))) {
-                                                            this.value = '';
-                                                        } else {
-                                                            if (/\[day\]/.test(fields[0].name)) {
-                                                                this.value = fields[1].value + '/' + fields[0].value + '/' + fields[2].value;
-                                                            } else {
-                                                                this.value = fields[0].value + '/' + fields[1].value + '/' + fields[2].value;
-                                                            }
-                                                        }
-                                                    });
-                                            });
-                                        $('.phonefield-us', '#mc_embed_signup').each(
-                                            function() {
-                                                var fields = new Array();
-                                                var i = 0;
-                                                $(':text', this).each(
-                                                    function() {
-                                                        fields[i] = this;
-                                                        i++;
-                                                    });
-                                                $(':hidden', this).each(
-                                                    function() {
-                                                        if (fields[0].value.length != 3 || fields[1].value.length != 3 || fields[2].value.length != 4) {
-                                                            this.value = '';
-                                                        } else {
-                                                            this.value = 'filled';
-                                                        }
-                                                    });
-                                            });
-                                        return mce_validator.form();
-                                    },
-                                    success: mce_success_cb
-                                };
-                                $('#mc-embedded-subscribe-form').ajaxForm(options);
-
-
-                            });
-                        }
-
-                        function mce_success_cb(resp) {
-                            $('#mce-success-response').hide();
-                            $('#mce-error-response').hide();
-                            if (resp.result == "success") {
-                                $('#mce-' + resp.result + '-response').show();
-                                $('#mce-' + resp.result + '-response').html(resp.msg);
-                                $('#mc-embedded-subscribe-form').each(function() {
-                                    this.reset();
-                                });
-                            } else {
-                                var index = -1;
-                                var msg;
-                                try {
-                                    var parts = resp.msg.split(' - ', 2);
-                                    if (parts[1] == undefined) {
-                                        msg = resp.msg;
-                                    } else {
-                                        i = parseInt(parts[0]);
-                                        if (i.toString() == parts[0]) {
-                                            index = parts[0];
-                                            msg = parts[1];
-                                        } else {
-                                            index = -1;
-                                            msg = resp.msg;
-                                        }
-                                    }
-                                } catch (e) {
-                                    index = -1;
-                                    msg = resp.msg;
-                                }
-                                try {
-                                    if (index == -1) {
-                                        $('#mce-' + resp.result + '-response').show();
-                                        $('#mce-' + resp.result + '-response').html(msg);
-                                    } else {
-                                        err_id = 'mce_tmp_error_msg';
-                                        html = '<div id="' + err_id + '" style="' + err_style + '"> ' + msg + '</div>';
-
-                                        var input_id = '#mc_embed_signup';
-                                        var f = $(input_id);
-                                        if (ftypes[index] == 'address') {
-                                            input_id = '#mce-' + fnames[index] + '-addr1';
-                                            f = $(input_id).parent().parent().get(0);
-                                        } else if (ftypes[index] == 'date') {
-                                            input_id = '#mce-' + fnames[index] + '-month';
-                                            f = $(input_id).parent().parent().get(0);
-                                        } else {
-                                            input_id = '#mce-' + fnames[index];
-                                            f = $().parent(input_id).get(0);
-                                        }
-                                        if (f) {
-                                            $(f).append(html);
-                                            $(input_id).focus();
-                                        } else {
-                                            $('#mce-' + resp.result + '-response').show();
-                                            $('#mce-' + resp.result + '-response').html(msg);
-                                        }
-                                    }
-                                } catch (e) {
-                                    $('#mce-' + resp.result + '-response').show();
-                                    $('#mce-' + resp.result + '-response').html(msg);
-                                }
-                            }
-                        }
-                        </script>
-                        <!--End mc_embed_signup-->
-                        <!--mailchimpjsends-->
-                        <script>
-						   // Get the modal
-var modal = document.getElementById('#openModal');
-// When the user clicks anywhere outside of the modal, close it
-function modalClose() {
-    if (location.hash == '#openModal') {
-        location.hash = '';
-    }
-}
-
-// Handle ESC key (key code 27)
-document.addEventListener('keyup', function(e) {
-    if (e.keyCode == 27) {
-        modalClose();
-    }
-});
-
-var modal = document.querySelector('#openModal');
-
-// Handle click on the modal container
-modal.addEventListener('click', modalClose, false);
-
-// Prevent event bubbling if click occurred within modal content body
-modal.children[0].addEventListener('click', function(e) {
-    e.stopPropagation();
-}, false);
-                        (function(i, s, o, g, r, a, m) {
-                            i['GoogleAnalyticsObject'] = r;
-                            i[r] = i[r] || function() {
-                                (i[r].q = i[r].q || []).push(arguments)
-                            }, i[r].l = 1 * new Date();
-                            a = s.createElement(o),
-                                m = s.getElementsByTagName(o)[0];
-                            a.async = 1;
-                            a.src = g;
-                            m.parentNode.insertBefore(a, m)
-                        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-                        ga('create', 'UA-45882697-5', 'auto');
-                        ga('send', 'pageview');
-                        </script>
-
-                        <!--<button onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/eijljnfcmaammkjailmoddbelkkdkeme', function(){console.log('success');}, function(error){console.log(error);});">Download Todoed</button>
--->
-
-                        <!-- Start of StatCounter Code for Default Guide -->
-                        <script type="text/javascript">
-                        var sc_project = 9973696;
-                        var sc_invisible = 1;
-                        var sc_security = "86594b50";
-                        var scJsHost = (("https:" == document.location.protocol) ?
-                            "https://secure." : "http://www.");
-                        document.write("<sc" + "ript type='text/javascript' src='" +
-                            scJsHost +
-                            "statcounter.com/counter/counter.js'></" + "script>");
-                        </script>
-                        <noscript>
-                            <div class="statcounter">
-                                <a title="shopify
-analytics tool" href="http://statcounter.com/shopify/" target="_blank">
-                                    <img class="statcounter" src="https://c.statcounter.com/9973696/0/86594b50/1/" alt="shopify analytics tool">
-                                </a>
-                            </div>
-                        </noscript>
-                        <!-- End of StatCounter Code for Default Guide -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var $_Tawk_API = {},
+        $_Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/53bb002a488d9fc54f00015b/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 
