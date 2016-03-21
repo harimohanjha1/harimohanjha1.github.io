@@ -1,26 +1,49 @@
 {
-  "name": "preseed.github.io",
-  "version": "0.0.0",
-  "description": "preseed.github.io\r =================",
-  "main": "lte-ie7.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "headhesive",
+  "description": "An on-demand sticky header",
+  "version": "1.2.4",
+  "author": {
+    "name": "Mark Goodyear",
+    "url": "http://markgoodyear.com",
+    "twitter": "@markgdyr"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/preseed/preseed.github.io.git"
-  },
-  "author": "Preseed",
-  "license": "ISC",
+  "keywords": [
+    "header",
+    "head",
+    "sticky",
+    "banner",
+    "navigation",
+    "nav",
+    "scroll"
+  ],
+  "main": "dist/headhesive.js",
+  "homepage": "http://markgoodyear.com/labs/headhesive",
+  "repository": "git@github.com:markgoodyear/headhesive.js.git",
   "bugs": {
-    "url": "https://github.com/preseed/preseed.github.io/issues"
+    "url": "https://github.com/markgoodyear/headhesive.js/issues"
   },
-  "homepage": "https://github.com/preseed/preseed.github.io",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.9"
+  },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^1.0.1",
-    "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "del": "^1.2.0",
+    "gulp": "~3.8.11",
+    "gulp-bump": "^0.3.1",
+    "gulp-concat": "~2.5.2",
+    "gulp-header": "~1.2.2",
+    "gulp-include": "^1.1.1",
+    "gulp-jshint": "~1.11.0",
+    "gulp-livereload": "~3.8.0",
+    "gulp-plumber": "~1.0.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "~3.0.4",
+    "jshint-stylish": "~2.0.0"
   }
 }

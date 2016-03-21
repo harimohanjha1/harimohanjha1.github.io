@@ -1,1010 +1,1186 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css' />
-
-
-
-
-    <title>Preseed</title>
-
-    <meta name="description" content="We inspire ideas, faith and action right from the stage when you are a mere man or a mere woman with 'a will to do' something out of the ordinary." />
-
-    <link href="foaw/css/fa-cleaned.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/ico/Nfavicon.png" />
-    <link href="icons.css" rel="stylesheet" />
-    <link href="css/epicslider-cleaned.css" rel="stylesheet" />
-    <link href="css/flexslider-cleaned.css" rel="stylesheet" />
-    <link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" />
-    <link href="css/style-cleaned-main.css" rel="stylesheet" />
-    <link href="css/udt_media_queries-cleaned.css" rel="stylesheet" />
-    <link href="css/udt_shortcodes-cleaned.css" rel="stylesheet" />
-	<link href="css/footer.css" rel="stylesheet" />
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
-    <script type="text/javascript" src="js/jquery.ajaxloading.js"></script>
-    <script type="text/javascript" src="js/jquery.epicslider.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="js/jquery.tweet.js"></script>
-    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-touch-swipe-1.0.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/onepage.js"></script>
-    <script type="text/javascript" src="js/udt_shortcodes.js"></script>
-    <script type="text/javascript" src="js/waypoints.min.js"></script>
-
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" size="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" size="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" size="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
-    <link rel="shortcut icon" href="images/ico/Nfavicon.png" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+﻿<!DOCTYPE html>
+<!--<html class="no-js" itemscope itemtype="http://schema.org/WebPage">-->
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
-    @media all and (min-width: 1400px) {
-        #teaser-1 {
-            -webkit-background-size: cover;
-            background-size: cover;
-            background-position: center;
-        }
-		#caption{
-		font-size:24px; 
-		position: absolute; 
-		top: 20px; 
-		left: 20px;
-		 right: 20px;
-         z-index: 100000; 
-		 text-align: center;
-		 display:block;
-		 margin: 25px auto;
-		}
-        #round-nav {
-            background-color: #FF2778;
-            width: 360px;
-            height: 360px;
-            z-index: 4;
-            border-radius: 100%;
-            margin-top: 180px;
-            margin-left: -180px;
-            left: 50%;
-            text-align: center;
-            position: absolute;
-        }
-        #round-nav,
-        #top-logo {
-            -webkit-transition: all 400ms;
-            -o-transition: all 400ms;
-            transition: all 400ms;
-        }
-        #top-logo {
-            position: relative;
-            top: 140px;
-            width: 300px;
-            height: auto;
-        }
-        #round-nav:hover {
-            cursor: pointer;
-            -webkit-transform: scale(1.13, 1.13);
-            -ms-transform: scale(1.13, 1.13);
-            -o-transform: scale(1.13, 1.13);
-            transform: scale(1.13, 1.13);
-        }
-        #round-nav:hover > * {
-            -webkit-transform: scale(.8849557, .8849557);
-            -ms-transform: scale(.8849557, .8849557);
-            -o-transform: scale(.8849557, .8849557);
-            transform: scale(.8849557, .8849557);
-        }
-    }
-    @media all and (max-width: 1399px) {
-        #teaser-1 {
-            -webkit-background-size: inherit;
-            background-size: inherit;
-            background-position: center;
-        }
-		#caption{
-		font-size:24px;
-		position: absolute; 
-		top: 20px; 
-		left: 20px;
-		 right: 20px;
-         z-index: 100000; 
-		 text-align: center;
-		 display:block;
-		 margin: 25px auto;
-		}
-        #round-nav {
-            background-color: #FF2778;
-            width: 360px;
-            height: 360px;
-            z-index: 4;
-            border-radius: 100%;
-            margin-top: 180px;
-            margin-left: -180px;
-            left: 50%;
-            text-align: center;
-            position: absolute;
-        }
-        #round-nav,
-        #top-logo {
-            -webkit-transition: all 400ms;
-            -o-transition: all 400ms;
-            transition: all 400ms;
-        }
-        #top-logo {
-            position: relative;
-            top: 140px;
-            width: 300px;
-            height: auto;
-        }
-        #round-nav:hover {
-            cursor: pointer;
-            -webkit-transform: scale(1.13, 1.13);
-            -ms-transform: scale(1.13, 1.13);
-            -o-transform: scale(1.13, 1.13);
-            transform: scale(1.13, 1.13);
-        }
-        #round-nav:hover > * {
-            -webkit-transform: scale(.8849557, .8849557);
-            -ms-transform: scale(.8849557, .8849557);
-            -o-transform: scale(.8849557, .8849557);
-            transform: scale(.8849557, .8849557);
-        }
-    }
-    @media all and (max-width: 719px) {
-	#caption{
-		font-size:21px;
-		position: absolute; 
-		top: 20px; 
-		left: 20px;
-		 right: 20px;
-         z-index: 100000; 
-		 text-align: center;
-		 display:block;
-		 margin: 25px auto;
-		}
-        #round-nav {
-            background-color: #FF2778;
-            width: 300px;
-            height: 300px;
-            z-index: 4;
-            border-radius: 100%;
-            margin-top: 230px;
-            margin-left: -150px;
-            left: 50%;
-            text-align: center;
-            position: absolute;
-        }
-        #round-nav,
-        #top-logo {
-            -webkit-transition: all 400ms;
-            -o-transition: all 400ms;
-            transition: all 400ms;
-        }
-        #top-logo {
-            position: relative;
-            top: 123.33333px;
-            width: 250px;
-            height: auto;
-        }
-        #round-nav:hover {
-            cursor: pointer;
-            -webkit-transform: scale(1.13, 1.13);
-            -ms-transform: scale(1.13, 1.13);
-            -o-transform: scale(1.13, 1.13);
-            transform: scale(1.13, 1.13);
-        }
-        #round-nav:hover > * {
-            -webkit-transform: scale(.8849557, .8849557);
-            -ms-transform: scale(.8849557, .8849557);
-            -o-transform: scale(.8849557, .8849557);
-            transform: scale(.8849557, .8849557);
-        }
-    }
-    @media all and (max-width: 475px) {
-	#caption{
-		font-size:18px;
-		position: absolute; 
-		
-		left: 10px;
-		 right: 10px;
-         z-index: 100000; 
-		 text-align: center;
-		 display:block;
-		 margin: 5px auto;
-		}
-        #round-nav {
-            background-color: #FF2778;
-            width: 150px;
-            height: 150px;
-            z-index: 4;
-            border-radius: 100%;
-            margin-top: 170px;
-            margin-left: -80px;
-            left: 60%;
-            text-align: center;
-            position: absolute;
-        }
-        #round-nav,
-        #top-logo {
-            -webkit-transition: all 400ms;
-            -o-transition: all 400ms;
-            transition: all 400ms;
-        }
-        #top-logo {
-            position: relative;
-            top: 56.6666666667px;
-            width: 125px;
-            height: auto;
-        }
-        #round-nav:hover {
-            cursor: pointer;
-            -webkit-transform: scale(1.13, 1.13);
-            -ms-transform: scale(1.13, 1.13);
-            -o-transform: scale(1.13, 1.13);
-            transform: scale(1.13, 1.13);
-        }
-        #round-nav:hover >  {
-            -webkit-transform: scale(.8849557, .8849557);
-            -ms-transform: scale(.8849557, .8849557);
-            -o-transform: scale(.8849557, .8849557);
-            transform: scale(.8849557, .8849557);
-        }
-    }
-	
-	.twitter-follow-button{
-	width:100% !important;
-	}
-
-    .hn-button{
-        width: 100px;
-        height: 20px;
-    }
-	
-    
+  ul {list-style: none; width: 900px; margin-left: 150px; align:center; }
+  ul li {display: block;position: relative;float:
+left;font-style:bold;font-family:&amp;amp;amp;amp;#39;Droid-Sans&amp;amp;amp;amp;#39;;width
+:200px;}
+  li ul {display: none;width:200px;font-size:16px;}
+  ul li ul a{font-size:16px;}
+  ul li a {display: block;background: transparent;padding: 5px 10px 5px 10px;text-decoration: none;
+           white-space: nowrap;color:#ffffff;font-family: Droid Sans Mono;;font-size:24px;
+}
+  ul li a:hover {background: #333333;}
+  li:hover ul {display: block; position: absolute;}
+  li:hover li {float: none;}
+  li:hover a {background: #333333;}
+  li:hover li a:hover {background: #547c65;}
+  #drop-nav li ul li {border-top: 0px;}
+</style>
+    <style>
 
 
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
-	position: relative;
-	z-index: 2;
-	cursor: pointer;
+.button:active
+{
+    background-color:#7FB5B5;
+  background: -webkit-linear-gradient(#7FB5B5, #293f50);
+  background:    -moz-linear-gradient(#7FB5B5, #293f50);
+  background:         linear-gradient(#7FB5B5, #293f50);
 }
 
-/* Hide the tooltip content by default */
-[data-tooltip]:before,
-[data-tooltip]:after {
-  visibility: hidden;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	opacity: 0;
-	pointer-events: none;
+.footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
 }
 
-/* Position tooltip above the element */
-[data-tooltip]:before {
-	position: absolute;
-	bottom: 150%;
-	left: 50%;
-	margin-bottom: 5px;
-	margin-left: -80px;
-	padding: 7px;
-	width: 160px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius:    3px;
-	border-radius:         3px;
-	background-color: #2095c0;
-	background-color: #2095c0;
-	color: #fff;
-	content: attr(data-tooltip);
-	text-align: center;
-	font-size: 14px;
-	line-height: 1.2;
+</style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+;  
 }
-
-/* Triangle hack to make tooltip look like a speech bubble */
-[data-tooltip]:after {
-	position: absolute;
-	bottom: 150%;
-	left: 50%;
-	margin-left: -5px;
-	width: 0;
-	border-top: 5px solid #000;
-	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
-	content: " ";
-	font-size: 0;
-	line-height: 0;
+ 
+.menu {
+    width:1000px;
+    height:50px;
+    margin:0px auto;
+  margin-left:280px;
 }
-
-/* Show tooltip content on hover */
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
-	visibility: visible;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-	opacity: 1;
+ #menu {
+  position: fixed;
+  right: 50%;
+  top: 0%;
+  width: 8em;
+  margin-top: 2.5em;
 }
-	
-    </style>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <!-- script for google analytics -->
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:&amp;amp;amp;amp;#39;Ek Mukta&amp;amp;amp;amp;#39;;
+    color:white;
+ 
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+   
+}
+ 
+.menu li:hover &amp;amp;amp;amp;gt; a, .menu .current-item &amp;amp;amp;amp;gt; a {
+    text-decoration:none;
+    color:white;
+     
+}
+ 
+.menu .arrow {
+    font-size:4px;
+    line-height:0%;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */  
+}
+/*----- Top Level -----*/
+.menu &amp;amp;amp;amp;gt; ul &amp;amp;amp;amp;gt; li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    color:white;
+    font-size:30px;
+}
+ 
+.menu &amp;amp;amp;amp;gt; ul &amp;amp;amp;amp;gt; li &amp;amp;amp;amp;gt; a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    font-size:30px;
+    color:white;
+      
+}
+ 
+.menu &amp;amp;amp;amp;gt; ul &amp;amp;amp;amp;gt; li:hover &amp;amp;amp;amp;gt; a, .menu &amp;amp;amp;amp;gt; ul
+&amp;amp;amp;amp;gt; .current-item
+&amp;amp;amp;amp;gt; a {
+    background:#2e2728;
+    opacity: 0.7;
+    filter: alpha(opacity=60);    
+      border-radius:15px;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+    border-radius:20px;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:21px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+  
+    background-color: #ffffff;
+   color:black;
+    opacity: 0.4;
+    filter: alpha(opacity=60);
+}
+</style>
+    <!-- Scripting and CSS for buttons and panels -->
     <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-45882697-3', 'auto');
-          ga('send', 'pageview');
-
-    </script>
-</head>
-
-<body>
-		<p><img style="float:left; padding-right:10px;padding-top:10px;width:280px;height:80px" src="images/Nnavbarlogo.png">
-		<p><img style="float:right; padding-right:10px;padding-top:10px;width:280px;height:80px" src="images/proj2_360.png">
-		</p>
-		</p>
-		
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=567797739996281&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<script type="text/javascript">
-window.twttr = (function (d, s, id) {
-  var t, js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src= "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-}(document, "script", "twitter-wjs"));
+ 
+$(document).ready(function(){
+    $("#flip").on('mouseenter',function(){
+		$("#panel1,#panel2").hide();
+        $("#panel").slideToggle('fast');
+    });
+    // $("#flip").on('mouseleave',function(){
+        // $("#panel").hide();
+    // });
+    
+	$("#flip1").on('mouseenter',function(){
+		$("#panel,#panel2").hide();
+        $("#panel1").slideToggle('fast');
+    });
+    // $("#flip1").on('mouseleave',function(){
+        // $("#panel1").hide();
+    // });
+        
+    $("#flip2").on('mouseenter',function(){
+		$("#panel,#panel1").hide();
+        $("#panel2").slideToggle('fast');
+    });
+    // $("#flip2").on('mouseleave',function(){
+        // $("#panel2").hide();
+    // });
+});
 </script>
-    <div id="fb-root"></div>
-    <script type="text/javascript">
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1453247728270397&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <script type="text/javascript">
-    var isMobile = false;
+    <style>
 
-    if (navigator.userAgent.match(/Android/i) ||
-        navigator.userAgent.match(/webOS/i) ||
-        navigator.userAgent.match(/iPhone/i) ||
-        navigator.userAgent.match(/iPad/i) ||
-        navigator.userAgent.match(/iPod/i) ||
-        navigator.userAgent.match(/BlackBerry/i)) {
+#panel {
+    display: none;
+}
 
-        isMobile = true;
+#panel1 {
+    display: none;
+}
 
+#panel2 {
+    display: none;
+
+}
+</style>
+    <!-- Scripting and CSS for buttons and panels -->
+    <meta charset="utf-8" />
+    <title>jQuery slideToggle Effect</title>
+    <style type="text/css">
+
+    .box{
+        width: 400px;
+        background: #84C3BE;
+        border: 1.3px solid #57A639;
+        border-radius:10px;
+    }
+    .box-inner{
+        padding: 10px;
+         width:100%;
     }
 
-    $(window).load(function() {
 
-        //call slider
-        $('.epicSlider').epicSlider({
+.don{
+        width: 400px;
+        background:#84C3BE;
+        border: 1.3px solid #57A639;
+       border-radius:10px;
+    }
+    .don-inner{
+        padding: 10px;
+         width:100%;
+   
+    }
 
-            loop: false, //Boolean: whether slideshow should loop or not 
-            slideShow: true, //Boolean: use slideshow or not
-            autoPlay: true, //Boolean: autoplay uplon load or not
-            slideShowInterval: 4000, //Integer: slideshow cycling speed, in milliseconds
-            transitionSpeed: 1000, //Integer: transitions speed, in milliseconds
-            startSlide: 0, //Integer: starts at 0
-            shuffleSlides: false, //Boolean: shuffle slides or not
-            easing: 'easeInOutQuint', //String: easing method - see http://jqueryui.com/demos/effect/easing.html
-            fx: 'leftToRight', //String: none, fade, leftToRight, topToBottom 
-            fxmobile: 'leftToRight', //String: mobile effect -  none, fade, leftToRight, topToBottom 
-            pattern: true //Boolean: add pattern or not
-
+.mon{
+        width: 400px;
+        background: #84C3BE;
+        border: 1.3px solid #57A639;
+        border-radius:10px;
+    }
+    .mon-inner{
+        padding: 10px;
+         width:100%;
+    }
+#z{
+  z-index:-1;
+}
+</style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+        $(&amp;amp;amp;amp;quot;.slide-toggle&amp;amp;amp;amp;quot;).click(function(){
+            $(&amp;amp;amp;amp;quot;.box&amp;amp;amp;amp;quot;).slideToggle(&amp;amp;amp;amp;quot;slow&amp;amp;amp;amp;quot;);
         });
-
-
     });
-    </script>
-
-    <script type="text/javascript" >
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId: '{your-app-id}',
-            xfbml: true,
-            version: 'v2.0'
+</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+        $(&amp;amp;amp;amp;quot;.don-toggle&amp;amp;amp;amp;quot;).click(function(){
+            $(&amp;amp;amp;amp;quot;.don&amp;amp;amp;amp;quot;).slideToggle();
         });
-    };
-
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-	    <!--opening page-->
-		    <div class="page odd section">
-
-        <!--opening page content-->
-        <div class="content clearfix" style="display: block;max-width:800px;">
-		   <!--section title-->
-			
-            <div class="section-title">
-                <h6 style="text-align:center;
-          margin-top:40px;
-          font-size:20px;
-          width:90%;
-          max-width:640px;
-          margin-left:auto;
-          margin-right:auto;">At our core, we are developing a product called MyIdealist, Where world meets ideas.
-                    <span><p> It will be launched soon.</span></h6>
-                </h3>
-                <br/>
-				
-				<div align="justify" style=" line-height: 35px;font-size: 22px;font-style:'Segoe UI Light';width:90%;max-width:800px;display:block;margin:auto;">
-                <span>Preseed is the name of MyIdealist's own volunteer community of entrepreneurs and potential entrepreneurs 
-				<span>MyIdealist's own volunteer community of entrepreneurs and potential entrepreneurs product. But MyIdealist</span>
-				<span>is not just about codes, it is a culture of globally distributed teams, living in ideas, faith and action. </span>
-				</h6> </div>
-                </br>
-               <h6 align="center" style="width:90%;max-width:800px;display:block;font-size:22px;margin:auto;">
-                    <span>Read <a href="https://medium.com/the-preseed/my-last-10-years-for-my-whole-lifetime-b2cf937533a1#.47gesg5xv" style="none"><strong> this</a></strong> note from our founder. </span>
-                    </strong>
-                </h6>
-
-                <br>
-				<br>
-				<h6 style="font-style:Segoe UI Light">NOW KNOW PRESEED</h6>
-				<center style="font-family:'opensans';font-size:18px;align:justify;display:block">Our own little world of ideas. </center>
-			<br>	
-			<center><a href="#bottom"><img src="images/gallery/arrowdown.png"></a></center>
-			<br>
-					<hr size=4 width="50%">
-        </div>    <!--end p1 content-->
-   </div>
-   </div>
-<!--start wrapper-->
-<a id="bottom"></a>
-    <div id="wrapper">
-       <!--start header-->
-        <div class="header header-main">
-            <div class="inner">
-                <div class="logo-container">
-                    <div class="logo">
-                        <a class="navigateTo" href="#homepage">
-                            <img src="images/Nnavbarlogo.png" style="PADDING-TOP: 10px" title="Home" alt="" />
-                        </a>
-                    </div>
-                </div>
-
-                <!--mobileMenu toggle-->
-                <div class="mobileMenuToggle">
-                    <a href="#"></a>
-                </div>
- <!--navigation-->
-                <ul class="navigation">
-                    <li><a class="navigateTo" href="#homepage">Home</a>
-                    </li>
-                    <li><a class="navigateTo" href="#About">We Do</a>
-                    </li>
-                    <li><a class="navigateTo" href="#We-Are">We Are</a>
-                    </li>
-                    <li><a class="navigateTo" href="http://preseed.in/media" target="_blank">Media Network</a>
-                    </li>
-                    <li><a class="navigateTo" href="#contact">Contact Us</a>
-                    </li>
-                    <li><a class="navigateTo" href="#Patron">Support Us</a>
-                    </li>
-                    <li class="hov"><a title="Medium" href="https://medium.com/@nishchal/publications" target="_blank"><!--<img src="images/gallery/me3.png"   width="18px" class="hov"  style="margin-top:40%"/>--></a>
-                    </li>
-                    <li>
-                    <a title="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="&#xe004;" style="font-size:16px;"></a>
-                    </li>
-                    <li>
-                    <a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="&#xe002;" style="font-size:16px;"></a>
-                    </li>
-                    <li>
-                        <a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="&#xe003;" style="font-size:16px;"></a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <!--end header-->
-
-       
-        <!--start homepage-->
-        <div id="homepage" class="homepage section">
-
-
-            <!--start slider-->
-           <div id="epicSlider1" class="epicSlider theme-default slider-wrapper" style="margin-bottom:50px;">
-                <div id="slides">
-                    <img src="images/1.jpg" alt="Image 1" title="#html-content1"/>
-                </div>
-
-                <!--graphic logo-->
-                 <div class="epic-graphic logo-homepage" id="html-content1" >
-                    <a class="navigateTo" href="#We-Inspire"></a>
-                 </div> 
-
-
-                <div id="caption">
-                    
-			<span style="font-family:'Dancing Script', cursive; color:#fff;line-height:30px;text-shadow:1px 1px 10px #000;">Before Preseed, you had a mere will to do something out of the ordinary.
-                        <br/>Now you will have a rock solid idea to do.</span>
-						
-                </div>
-                <!--
-                <div>
-                  <img src="images/Nblackbacklogo.png"  alt="" style="opacity:0.6;"/>
-                </div>-->
-                
-
-                
-
-                <!--caption 3-->
-
-            </div>
-            <!--end slider-->
-        </div>
-
-        <!--end homepage-->
-
-       
-
-        <div id="We-Inspire" class="teaser section page" style="background: url(images/gallery/openhack.jpg) no-repeat center center scroll ; -webkit-background-size: 100% 100%; background-size:100% 100% ;height:auto;" >
-            <div class="teaser-title" style="margin-top:0.05% !important;margin: auto;text-align: center;width:100%;text-align:center;">
-                <h4 style="margin:150px auto 100px;">WE INSPIRE
-                    <br/>
-                    <span style="display:block;margin-top:20px;text-shadow: 0 0 8px #fff;" class="taglinehome">IDEAS | FAITH | ACTION</span>
-                    <font size=5>
-                        <span style="display:block;margin-top:100px;width:80%;max-width:800px;margin-left: auto;margin-right:auto;">The results of our actions are showcased at
-                            <br />
- <a href="http://startups.preseed.in/" target="_blank" style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)">
-                <span class="btn btn-large btn-success" style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300">PRESEED STARTUPS</span>
-                </a>
-						<!--	<a style="color:#fff000;background:#FF0066" href="http://startups.preseed.in/" target="_blank">
-                                <span style="text-align:center; font-weight:bolder;padding:2%;"><input type="button" value="Preseed Startups"/></span>
-                            </a>-->
-                            <!--All Preseed Projects are very likely get funded <br/>as soon as they get customer validated. (Big deal? No,<br/>this is among the easier things we do)-->
-
-                        </span>
-                    </font>
-                </h4>
-            </div>
-        </div>
-
-
-
-
-    <!--start page 1-->
-    <div id="About" class="page odd section">
-
-        <!--start p1 content-->
-        <div class="content clearfix" style="display: block;max-width:1200px;">
-            <!--section title-->
-            <div class="section-title">
-                <h3>WE
-                    <span>DO</span>
-                </h3>
-                <br/>
-                <h6>
-                    <span style="display: block;margin:30px auto;width:90%;">We engage with people over our own progressive ideas, opportunities or mere dreams, to enable them to build those dots with us, into something more meaningful.</span>
-                </h6>
-
-            </div>
-            <div class="round-thumbs" style="width:100%;display:block;margin:auto;text-align:center;">
-
-                <div class="column_one_half team" style="display:inline-block;margin:auto;width:100%;float:none;max-width:500px;">
-                    <div class="round-thumb-container">
-                        <div class="round-thumb a2">
-                            <a title="" href="http://weblab.preseed.in" target="_blank">
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <h5><u>Preseed Web Lab
-                    </u></h5>
-                    <h6>
-                        <span>The food for our own soul.
-                            <br/>Here we build upon our
-                            <br/>own consumer web ideas
-                            <br/>with great design and
-                            <br/>user values.</span>
-                    </h6>
-                    <!--social networks-->
-                </div>
-                <div class="column_one_half last team clearfix" style="display:inline-block;float:none;width:100%;margin:auto;max-width:500px;">
-                    <div class="round-thumb-container">
-                        <div class="round-thumb a3">
-                            <span>
-
-                                <a title="" href="http://entrepreneurlab.preseed.in/" target="_blank">
-                                    <img class="lazy" src="" alt="" />
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <h5><u>Preseed Entrepreneur Lab
-                    </u></h5>
-                    <h6>
-                        <span>Here we build upon our
-                            <br/>ideas about anything
-                            <br/>with anyone beyond
-                            <br/>the scope of
-                            <br/>Preseed web lab.</span>
-                    </h6>
-                </div>
-
-            </div>
-            <div class="text-center">
-                <center>
-                    <h3 style="display: block;margin:40px auto;"><a href="https://medium.com/the-preseed/highlight-2014-our-strong-foundation-b6276a335c1e" style="font-weight:normal;text-shadow: 0 0 1px #FF005A;" target="_blank"><u>Preseed story so far</u></a>
-                    </h3>
-                </center>
-            </div>
-
-            <div class="clearfix" style="max-width:1200px;display:block;margin:auto;text-align:center;"></div>
-        </div><!-- p1 content -->
-
-    </div><!--start page-->
-
-    <div id="We-Are" class="page even section">
-        <!--start p1 content-->
-        <div class="content clearfix" style="max-width:1200px;margin:auto;display: block;">
-            <!--section title-->
-            <div class="section-title">
-                <h3>WE
-                    <span>ARE</span>
-                </h3>
-
-                <br/>
-
-
-            </div>
-            <h4 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">A bunch of believers on a mission to empower those who have the will to do something
-                <br/>
-                <strong class="darkGray" style="display:block;margin:20px auto;">OUT OF THE ORDINARY</strong>
-            </h4>
-            <br>
-            <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
-                <span>We believe that one of the most understated reasons, or largely a non-stated reason to fail is - to not start. Leave the matter of success and failure to perseverance; there is nothing more to success and failure.
-                    <br/>THIS IS THE FUNDAMENTAL 'the ideology of Preseed' IS FOUNDED UPON  </span></h6>
-            <br>
-          
-            <div class="glyph" align="center">
-                <a title="Team" href="team.html" target="_blank">
-                    <div align="center" style="font-size:40px;" class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
-                </a>
-                <br>
-
-                <a href="http://preseed.in/team" style="padding-top:10px;font-size:15px" target="_blank"><u>OUR TEAM</u></a>
-                <br>
-                <!-- <h6 style="padding-top:10px;"><span>OUR TEAM</span></h6>-->
-                </br>
-                <h6 align="center" style="width:90%;max-width:800px;display:block;margin:auto;">
-                    <span>If we manage to give you a start,we have done for you what we have started Preseed to do.</span>
-                    <!--</strong>-->
-                </h6>
-
-                <div id="medium-embed" style="width:90%;display: block;margin:50px auto 0;">
-                    <script async src="https://static.medium.com/embed.js"  type="text/javascript"></script>
-                    <a class="m-collection" data-collapsed="true" ; href="https://medium.com/the-preseed">The Preseed </a>
-                </div>
-
-            </div>
-
-        </div>    <!--end p1 content-->
-   </div> 
-
-
-   <!--start teaser-->
-    
-    <div id="teaser-1" class="teaser" style="background-image: url(images/gallery/hippies.jpg);-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;height:auto;background-position:center;">
-        <div class="teaser-title" style="margin:auto;height:auto;overflow:hidden;display: block;">
-            <h6 style="display: block;width: 90%;max-width: 1200px;margin: 150px auto 100px;">
-                <strong class="white">
-                    <span style="text-transform:uppercase;">Here everyone is building upon an idea or an ideology</span>
-                </strong>
-                <br/>
-                <br/>
-                <strong class="green" style="-ms-word-break: break-word;word-break:break-word;">This is our (COUNTER)CULTURE where people BUILD before they learn, earn or burn</strong>
-                <br/>
-                <br/>
-                <br />
-                <a href="https://www.facebook.com/photo.php?fbid=440961039276529&set=a.361372230568744.78162.175348422504460&type=3&theater" target="_blank" style=" text-decoration:underline; border-bottom=3px; font-size:26px;font-weight:100;color:rgb(255,0,90)">
-                <span class="btn btn-large btn-success" style="padding-left:50px;padding-right:50px;color:#FFFFFF;font-size:24px;font-weight:300">GALLERY</span>
-                </a>
-            </h6>
-
-            <div class="section-button" style="display:block;position:relative;">
-                <a class="page-up navigateTo" href="#About"></a>
-            </div>
-
-        </div>
-        <!--section-button-->
-
-    </div>
-    <!--end teaser-->
-
-
-    <div id="contact" class="page even section">
-        <div class="content clearfix" style="max-width:1200px;margin:auto;">
-
-            <!--section title-->
-            <div class="section-title">
-                <h3>CONTACT
-                    <span>US</span>
-                </h3>
-                <h6>START A CONVERSATION
-                    <span>WE'LL TAKE IT FORWARD</span>
-                </h6>
-
-            </div>
-            <div id="three-button" style="block;max-width:1000px;margin:50px auto;text-align:center;">
-
-                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
-                    <a title="Facebook" href="https://www.facebook.com/messages/thepreseed" target="_blank" style="color:#ffffff; ">
-                        <center>
-                            <button class="btn btn-twitter btn-large btn-succes" style="padding-left:83px;padding-right:83px;padding:0;width:210px;height:65px;text-align:center;"><i class="fa fa-facebook"></i>&nbsp &nbspMessage </button>
-                        </center>
-                    </a>
-                </div>
-                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
-                    <a title="Twitter" href="https://twitter.com/thepreseed" target="_blank" style="color:#ffffff; ">
-                        <center>
-                            <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px;padding: 0;width: 210px;height: 65px;text-align: center;"><i class="fa fa-twitter"></i>&nbsp &nbsp@thepreseed</button>
-                        </center>
-                    </a>
-                </div>
-                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
-                    <a title="Email" href="mailto:love@preseed.in" target="_blank" style="color:#ffffff; ">
-                        <center>
-                            <button class="btn btn-twitter btn-large btn-succ" style="padding: 0;width: 210px;height: 65px;text-align: center;"><i class="fa fa-envelope-o"></i>&nbsp &nbsp love@preseed.in</button>
-                        </center>
-                    </a>
-                </div>
-                <!--<div class="column_one_third" style="display:inline-block;float:none;width:auto;">
-                    <a title="f65" href="" target="_blank" style="color:#ffffff; ">
-                        <center>
-                            <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px;padding: 0;width: 210px;height: 65px;text-align: center;">F6S</button>
-                        </center>
-                    </a>
-                </div>
-                <div class="column_one_third" style="display:inline-block;float:none;width:auto;">
-                    <a title="Angellist" href="https://angel.co/preseed" target="_blank" style="color:#ffffff; ">
-                        <center>
-                            <button class="btn btn-twitter btn-large btn-succes" style="padding-left:83px;padding-right:83px;padding:0;width:210px;height:65px;text-align:center;"><i class="fa fa-angellist"></i>&nbsp &nbspAngellist</button>
-                        </center>
-                    </a>
-                </div>-->
-                
-                
-
-            </div>
-
-            <center>
-                <h5 style="text-align:center;">
-                    <span>'COZ CONTACT FORMS ARE SO 1990s</span>
-                </h5>
-            </center>
-            <br>
-            <br>
-            <center>
-                <a title="Subscribe" href="http://justbuild.preseed.in" target="_blank" style="color:#ffffff; ">
-                    <center>
-                        <button class="btn btn-twitter btn-large btn-succe" style="padding-right:61px;padding-left:61px">Subscribe to Preseed Newsletter</button>
-                    </center>
-                </a>
-               
-            </center>
-        </div>
-       
-       <!--end p3 content-->
-    </div>
-           
-
-    <div id="Patron" class="teaser section page teaser31" style="background-image: url(images/gallery/bkimg.jpg);-webkit-background-size: 100% 100%; background-size:100% 100% ;background-repeat: no-repeat;opacity:0.9;filter:alpha(opacity=90);">
-        <div class="teaser-title" style="display: block;height:100%;">
-            <h6 style="display:block;width:90%;margin: 100px auto;text-align: center;max-width:1000px;">
-                <div style="-ms-word-break: break-word;word-break:break-word;">
-                    <strong class="darkGray" style="display: inline-block;height:auto">
-                        <span>
-                            <strike>inventor.visionary.musician.engineer.entrepreneur.thinker</strike>
-                        </span>
-                    </strong>
-                    <strong class="yellow" style="display: inline-block;">ARTIST</strong>
-                    <br/>
-                </div>
-                <br/>
-                <strong class="darkGray" style="display: block;">
-                    <span>WE ARE ON A JOURNEY TO INSPIRE A WHOLE GENERATION</span>
-                </strong>
-
-                <a style="font-size:44px; float:inherit; text-decoration:none; border-bottom=3px;" href="http://patron.preseed.in/" target="_blank">
-                    <span class="btn btn-large btn-primary custombtn patronizebtn" style="padding: 20px;margin-top: 50px;display: inline-block;margin-left: auto;margin-right: auto;font-size: 25px;text-shadow: 0 0 2px #fff;">PATRONIZE US</span>
-                </a>
-                <br/>
-                <br/>
-                <strong class="white patronizetext">OR</strong>
-                <br/>
-                <br/>
-                <a style="font-family:rescript;float:inherit; text-decoration:underline; border-bottom=3px;" href="http://preseedprints.com/" target="_blank">BUY OUR POSTERS</a>
-               <br/>
-                <br/>
-
-              
-                    
-                
-              
-
-            </h6>
-
-
-        </div>
-        <!--section-button-->
-        <div class="section-button">
-            <a class="page-up navigateTo" href="#Media-Network"></a>
-        </div>
-    </div> <!--end teaser-->
-<hr style="thick:3px;color:white;border:0">
-
-
-
-<div class="footerr" >
-	
-		<div id="leftfooter" style="padding:4%;">
-		<ul>
-			<li><a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5" target="_blank" style="font-size:14px;">FAQ</a><br><li>
-			<li><a href="http://preseed.in/team.html" target="_blank" style="font-size:14px;">Team</a><br><li>
-			<li><a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b" target="_blank" style="font-size:14px;">About Us</a><br></li>
-			<li><a href="http://projects.preseed.in/" target="_blank" style="font-size:14px;">Preseed Projects</a><br></li>
-			<li ><span style="color:#ff005a;font-size:14px" data-tooltip="Coming soon" data-placement="right" > All Projects</span><br /></li>
-			<li><a href="http://labs.preseed.in/"  style="font-size:14px;" target="_blank">Preseed Labs</a></li>
-			<li><a href="http://startups.preseed.in/"  style="font-size:14px;" target="_blank">Preseed Startups</a></li>
-		</ul>
-		</div>
-		<div id="rightfooter" style="padding:4%;">
-		<ul style="">
-		<li><iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thepreseed&amp;width=210px&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:20px;" allowTransparency="true"></iframe></li>
-		
-		<li><a class="twitter-follow-button" href="https://twitter.com/thepreseed" data-show-count="false" data-lang="en" style="font-size:0.8vw;font-size:1.6vh; width:100%;">Follow @thePreseed </a>			
-       </li>
-                           
-       
-		<li> <p style="font-size:14px;color:white;"><img src="images/contact.png" width="20px" height="20px" alt="contact" />Govind Garg:+91-9899535421 </p></li>
-		
-		<li><p style=" font-size:14px;color:white;">Meet us on<a href="https://angel.co/preseed" target="_blank" style="font-size:14px">  Angel list <img src="images/angellist.png" height="15" width="15"/> </a></p></li>
-		
-		
-		</ul>
-		</div>
-		
-		<div style="clear:both;" >
-		
-		
-	</div>
-
-
-    </div>
-    <!--end wrapper-->
-	<div style="background:#000000;">
-	<center><p style="text-align:center; background:#000000"><a href="http://preseed.in/legal" target="_blank" title="" style="color:#ff005a;text-decoration:none;font-size:14px;"> Copyright © 2015 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a><br /><br /></p></center>
-	</div>
-
-	<!-- <div style="background:black;width:100%;display:block;float:left;position:relative;color:white;">
-		<section style="width:35%;padding:3%;float:left;padding-left:12%;">
-		<a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">FAQ</a><br>
-		<a href="http://preseed.in/team.html" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">Team</a><br>
-		<a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">About us</a><br>
-		<a href="http://startups.preseed.in/" target="_blank" style="font-size:1.8vw;font-size:2.0vh;">Preseed Startups</a><br>
-       <!--  To know our complete startup portfolio,<a href="https://angel.co/preseed" target="_blank" style="font-size:1.8vw;font-size:2.0vh;"> check </a> us out on angellist <img src="images/angellist.png" height="15" width="15"/><br> 
-
-		</section>
-		
-		<center><section style="width:30%;float:right;position:relative;padding:3%;padding-right:4%;">
-		
-		
-		
-		<div style="width:100%;position:relative;padding-top:0"><iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thepreseed&amp;width=210px&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:20px;" allowTransparency="true"></iframe></div>
-		<div style="width:100%;position:relative;padding-top:1%;float:left;">
-		<a class="twitter-follow-button" href="https://twitter.com/thepreseed" data-show-count="false" data-lang="en" style="font-size:0.8vw;font-size:1.6vh; width:100%;">Follow @thePreseed </a>
-		</div>			
-       <br>
-		<div style="width:100%;position:relative;padding-top:1%;clear:both;float:left;">
-		<img src="images/contact.png" width="20px" height="20px" alt="contact" style="float:left;" /> <span style="font-size:1.2vw;font-size:1.9vh;float:left;">Govind Garg: 9899535421</span>
-		
-		</div><br>
-		<div style="float:left !important;">
-		<p style=" font-size:1.7vw;font-size:1.9vh;">To know our complete startup portfolio,<a href="https://angel.co/preseed" target="_blank" style="font-size:1.8vw;font-size:2.0vh;"> check </a> us out on angellist <img src="images/angellist.png" height="15" width="15"/></p>
-		</div>
-		</section></center>
-		
-	</div> -->
-    
-	
-	
-	
-	<!--<div style="height:100%;width:100%;background:black;">
-	<footer style="background:black !important;height:20%;">
-	<div style="background:black;padding:5%;width:30%;height:100%;display:block;float:left;position:relative;color:white;">
-		<a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5">FAQ</a><br>
-		<a href="http://preseed.in/team.html">TEAM</a><br>
-		<a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b">ABOUT US</a><br>
-		
-	</div>
-	</footer>
-	
-	<footer style="background:black !important;height:20%;">
-	<div style="background:black;padding:5%;width:50%:height:100%;display:block;float:left;position:relative;color:white;">
-		<a href="">fb</a>
-		<a href="">twitter</a><br>
-		<img src="images/contact.png" width="20px" height="20px" alt="contact" />Govind Garg:
-	</div>
-		
-	</div>
-	</footer>
-	</div>-->
-	
-	
+    });
+</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-1930971-6']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-
-    <!--Start of Tawk.to Script-->
+$(document).ready(function(){
+        $(&amp;amp;amp;amp;quot;.mon-toggle&amp;amp;amp;amp;quot;).click(function(){
+            $(&amp;amp;amp;amp;quot;.mon&amp;amp;amp;amp;quot;).slideToggle();
+        });
+    });
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--<meta name="viewport" content="width=1024" />-->
+    <meta name="viewport" content="width=900" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="Lolly Be" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://demo.preseed.in/lollybe/" />
+    <meta property="og:image" content="http://demo.preseed.in/lollybe/img/Logo_Size_M.png" />
+    <meta property="og:description" content="Lolly Be is a holistic healer integrating therapy, yoga and spiritual awareness." />
+    <link rel="shortcut icon" href="img/Logo_Size_S.png" />
+    <link rel="stylesheet" href="testimonial1/css/reset.css" />
+    <link rel="stylesheet" href="testimonial1/css/style.css" />
+    <!-- Resource style -->
+    <script src="testimonial1/js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <link rel="stylesheet" href="testimonial1/css/nav.css" />
+    <!-- Resource style -->
+    <script src="nav/js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <title>Lolly Be Healing</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" />
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/ghost-button.css" type="text/css" />
+    <link rel="stylesheet" href="css/creative.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="offering/screen.css" />
+    <!--<link rel="stylesheet" href="nav/css/style.css">-->
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
-    var $_Tawk_API = {},
-        $_Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/53bb002a488d9fc54f00015b/default';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+$(&amp;amp;amp;amp;quot;#content
+a[href^=&amp;amp;amp;amp;#39;http://&amp;amp;amp;amp;#39;]&amp;amp;amp;amp;quot;).attr(&amp;amp;amp;amp;quot;target&amp;amp;amp;amp;quot;,&amp;amp;amp;amp;quot;_blank&amp;amp;amp;amp;quot;);
+</script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $(&amp;amp;amp;amp;#39;[data-toggle=&amp;amp;amp;amp;quot;popover&amp;amp;amp;amp;quot;]&amp;amp;amp;amp;#39;).popover();   
+});
+</script>
+    <style type="text/css">
+    .bs-example{
+        margin: 150px 50px;
+    }
+</style>
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <script src="js/modernizr1.js"></script>
+    <!-- Modernizr -->
+    <script src="offering/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="offering/7610134.js"></script>-->
+    <script src="nav/js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <style>
+  
+  /* Base styles for the element that has a tooltip */
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: &amp;amp;amp;amp;quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&amp;amp;amp;amp;quot;;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+      opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition:    
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition:         
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: &amp;amp;amp;amp;quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=100)&amp;amp;amp;amp;quot;;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* Base styles for the tooltip&amp;amp;amp;amp;#39;s directional arrow */
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 700;
+  border:2px transparent;
+  background: transparent;
+  content: &amp;amp;amp;amp;quot;&amp;amp;amp;amp;quot;;
+}
+/* Base styles for the tooltip&amp;amp;amp;amp;#39;s content area */
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 160px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* Directions */
+/* Top (default) */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,
+.tooltip-top:before,
+.tooltip-top:after {
+  bottom: 100%;
+  left: 50%;
+}
+[data-tooltip]:before,
+.tooltip:before,
+.tooltip-top:before {
+  margin-left: -6px;
+  margin-bottom: -12px;
+  border-top-color: #000;
+  border-top-color: hsla(0, 0%, 20%, 0.9);
+}
+/* Horizontally align top/bottom tooltips */
+[data-tooltip]:after,
+.tooltip:after,
+.tooltip-top:after {
+  margin-left: -80px;
+}
+  
+  
+</style>
+    <style>
+        .glyphicon.glyphicon-play-circle {
+    font-size: 25px;
+}
+   
+  
+</style>
+    <meta name="google-translate-customization" content="3f370d25f6d85e78-26031ae61d667a04-gce3822ba6c7eb899-17" />
+  </head>
+  <body>
+  <header>
+    <div class="cd-header">
+    <div id="google_translate_element" style="PADDING-RIGHT:50px;PADDING-TOP:15px"></div>
+    <br />
+    <br />
+    <div id="menu">
+      <center>
+        <ul id="drop-nav">
+          <li>
+            <a href="http://demo.preseed.in/lollybe">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li>
+                <a href="http://demo.preseed.in/lollybe/about.html">About me</a>
+              </li>
+              <li>
+                <a href="http://demo.preseed.in/lollybe/mystory.html">My Story</a>
+              </li>
+              <li>
+                <a href="http://demo.preseed.in/lollybe/myresume.html">My Resume</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Offerings</a>
+            <ul>
+              <li>
+                <a href="http://demo.preseed.in/lollybe/pc.html">Personal Coaching</a>
+              </li>
+              <li>
+                <a href="http://demo.preseed.in/lollybe/workshop.html">Workshop</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Work with Us</a>
+            <ul>
+              <li>
+                <a href="http://lollybehealing.teampage.io">Team</a>
+              </li>
+              <li>
+                <a href="https://lollybehealing.typeform.com/to/dMYkCZhttp">Join our team</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </center>
+    </div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+    <script type="text/javascript">
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: &amp;amp;amp;amp;#39;en&amp;amp;amp;amp;#39;,
+includedLanguages:
+&amp;amp;amp;amp;#39;en,es&amp;amp;amp;amp;#39;, layout:
+google.translate.TranslateElement.InlineLayout.SIMPLE}, &amp;amp;amp;amp;#39;google_translate_element&amp;amp;amp;amp;#39;);
+                }
+             
+</script></div>
+    <img class="img-responsive img-center" src="img/logo2.jpg" style="padding-left:10px;padding-top:10px;border-radius:70%" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4 class="cd-headline rotate-1" style="color: #FFFFFF">
+    <span>Lolly Be</span> 
+    <!--<span ><br>Healing</span>
+                    <span>Lolly Be</span><span ><br>Whole</span>-->
+     
+    <span class="cd-words-wrapper">
+    <b class="is-visible">Healing</b> 
+    <b>Whole</b> 
+    <b>Love</b> 
+    <b>Wise</b> 
+    <b>Peace</b> 
+    <b>Safe</b> 
+    <b>Truth</b> 
+    <b>Strong</b> 
+    <!--<b>Energy work</b>--></span></h4>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <!--<h1>Your Favorite Source of Free Bootstrap Themes</h1>-->
+        <section class="cd-intro1">
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <ul class="cd-primary-nav">
+      <li>
+        <a href="http://demo.preseed.in/lollybe/">Home</a>
+      </li>
+      <li class="cd-label">About us</li>
+      <li>
+        <a href="http://demo.preseed.in/lollybe/about.html">About me</a>
+      </li>
+      <li>
+        <a href="http://demo.preseed.in/lollybe/mystory.html">My Story</a>
+      </li>
+      <li>
+        <a href="http://demo.preseed.in/lollybe/myresume.html">My Resume</a>
+      </li>
+      <!--<li><a href="#0">Services</a></li>-->
+      <li class="cd-label">Offerings</li>
+      <li>
+        <a href="http://demo.preseed.in/lollybe/pc.html">Personal Coaching</a>
+      </li>
+      <li>
+        <a href="http://demo.preseed.in/lollybe/workshop.html">Workshop</a>
+      </li>
+      <!--<li><a href="http://demo.preseed.in/lollybe/testimony">Testimonials</a></li>-->
+      <!--<li><a href="#0">Legal Page</a></li>-->
+      <li class="cd-label">Work with us</li>
+      <li>
+        <a href="http://lollybehealing.teampage.io">Team</a>
+      </li>
+      <li>
+        <a href="https://lollybehealing.typeform.com/to/dMYkCZhttp">Join our team</a>
+      </li>
+      <li class="cd-label">Work with us</li>
+      <li class="cd-social">
+        <a href="https://www.facebook.com/LollyBeYoga" target="_blank"></a>
+      </li>
+      <li class="cd-social">
+        <a href="https://twitter.com/lollybehealing" target="_blank"></a>
+      </li>
+      <li class="cd-social">
+        <a href="https://instagram.com/lollybehealing/" target="_blank"></a>
+      </li>
+      <li class="cd-social">
+        <a href="#" target="_blank"></a>
+      </li>
+    </ul>
+  </nav>
+  <br />
+  <br />
+  <br />
+  <!-- VIDEO and TEXT inline -->
+   
+  <iframe width="560" height="315" style="margin-left: 40px;margin-right: 40px;float:left"
+  src="http://www.youtube.com/embed/_x2tHF_opSc" frameborder="5px" allowfullscreen="" id='z'></iframe>
+  <p style="color:black;padding-top:100px; padding-right: 80px;font-size:140%;">I offer a combination of psychotherapeutic or
+  psychodynamic techniques to channel the physical experience of your body through the yogic tradition as well as raise awareness
+  of your connection to the divine, and your spirit. Know more about me 
+  <a href="http://demo.preseed.in/lollybe/about.html" target="_blank" style="color:blue;">here.</a></p>
+  <!-- VIDEO and TEXT inline -->
+  <div class="plans" align='center' style='margin-top:10%'>
+  <h1>Be the best version of yourself !</h1>
+  <br />
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            <button type="button" id="flip" class="ghost-button-full-color">Personal Coaching</button>
+          </th>
+          <th>
+            <button type="button" id="flip1" class="ghost-button-full-color">Workshop</button>
+          </th>
+          <th>
+            <button type="button" id="flip2" class="ghost-button-full-color">Store</button>
+          </th>
+        </tr>
+      </thead>
+    </table>
+	<div id="panel" class="ghost-box-full-color">
+        <p>
+          <b>
+            <strong>Are you wanting healthier and more balanced relationships in your life?</strong>
+          </b>
+        </p>
+        <br />
+        <br />
+        <center>
+          <p>I offer individual guidance sessions to help you develop positive relationships in your life. I focus on assisting you
+          to develop awareness of yourself. By cultivating your relationship to spirituality you can see the whole world through a
+          meaningful perspective. The more you learn to love yourself and your own divinity, the easier it becomes to relate to
+          others.</p>
+        </center>
+        <br />
+        <center>
+          <a href="http://demo.preseed.in/lollybe/pc" style="decoration:none;color:black;">Know More</a>
+        </center>
+      </div>
+      <div id="panel1" class="ghost-box-full-color">
+        <p>
+          <strong>Are you wondering how to heal from traumatic experiences?</strong>
+        </p>
+        <br />
+        <br />
+        <center>
+          <p>I facilitate workshops for Conscious Connection. We integrate intimacy games with partners to explore the experience
+          of seeing and being seen. We practice mindful yoga to learn about the internal experience of living in a body. We share
+          our truths and learn from one another. We witness and hold space for one another. We connect from our hearts and
+          understand the way we all reflect each other.</p>
+        </center>
+        <br />
+        <center>
+          <a href="http://demo.preseed.in/lollybe/workshop" style="color:black;decoration:none;">Know More</a>
+        </center>
+      </div>
+      <div id="panel2" class="ghost-box-full-color">
+        <h6 style="color:black;">Coming Soon!</h6>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index1.html">
+            <img src="img/im1.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index2.html">
+            <img src="img/im2.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index3.html">
+            <img src="img/im3.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index.html">
+            <img src="img/im4.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index5.html">
+            <img src="img/im5.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="file:///C:/Users/500028707/Documents/GitHub/Demo.preseed.in/lolly/index6.html">
+            <img src="img/im6.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <br />
+  <!--TESTIMONIALS -->
+  <p align="center"  style="font-family:verdana;color:black;font-size:150%;">See what people are saying after interacting
+    with me.
+	<br><br>
+	<i class="fa fa-quote-left fa-3x"></i>
+	</p>
+  <div class="cd-testimonials-wrapper cd-container">
+	<ul class="cd-testimonials">
+      <li>
+        <p>When am around you I feel so happy because you are happy and I also feel calm when am around you and I feel loved.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Acirce George</li>
+            <li>Certified Yoga Instructor, Uganda.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>You have helped me understand romantic relationships and relationships with friends and family by showing me a different
+        perspective. You have helped me break down relationships and situations to see the experience clearly without distractions
+        of emotion or my own self-absorption which helps me in situations now where I reflect on events outside of just my personal
+        view, attachments, and social constraints..</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>C***y</li>
+            <li>NYC</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>You are a spiritual healer and that you focus on meditation as a means of becoming centered. I think you could support
+        them by giving them some guidance material at first so that they can educate themselves a bit about healing from trauma and
+        to see if this is the best path for them. Then you could answer any questions they might have, and you could ask them
+        questions as well, perhaps questions they never thought of before, which might help them to understand the importance of
+        going through the healing process.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>S***ne G***t; Lawyer</li>
+            <li>Kingston, Jamaica</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Happy, enthusiastic, courageous, vibrant traveler, concerned, dedicated and good friend.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Himelda Martinez</li>
+            <li>NYC, retired educator</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Lolly has helped me to learn visualizations such as someone&#39;s excessive mind chatter or negative vibes to enter into
+        a big black cauldron instead of allowing those vibes be absorbed into my own being. It has helped me to protect myself and
+        harness my own physical, mental &amp; emotional energies. She also deepened my understanding of cord cutting through
+        ceremony and visual techniques. I now feel more in charge of my healing progress and can now share this deep wisdom with
+        others who may suffer from emotional/energetic wounds. It seems that the universe brought Lolly &amp; I together at a time
+        where we both were seeking female friendship with someone who was deeply rooted in Love. Thank you for bringing deep joy,
+        feminine wisdom &amp;&amp;love into my life. Namaste.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Tina Ulrich</li>
+            <li>West Haven</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Where I have reached is because of your effort, I have moved 50% in my journey because of you, you remain a role model
+        and a kind, caring, supportive and a loving person in my life and family.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Anena Kevin Okumu</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>You helped to reflect back to me the way that i was judging myself as being either not enough or too much. our session
+        helped bring awareness to how silly my fears and self-judgments are, which allows me to be less attached to these
+        judgments, laugh at them, release them, notice them instead of feeling like they are the truth and move on with my day. you
+        also helped me to feel more comfortable in my own skin, to feel normal, to love myself, my family and my friends even
+        deeper. Thank you.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Jackie Ryan</li>
+            <li>Harmony House, West Haven</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>You helped me understand moon energy, although the euphoria of MDMA probably had a lot to do with it haha. I also felt
+        that I was able to confront some conflict in myself relating to gender roles. I appreciated having you as a female friend,
+        especially in a town where so much emphasis is placed on sexuality.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Adrian</li>
+            <li>New Boston</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>You helped provide guidance as I considered entering into the social work profession. Also, your facebook posts always
+        cause me to self-reflect on areas of improvement. They help to keep me accountable to myself and who I want to be.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Apryl</li>
+            <li>Austin, TX; Mental Health Policy</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>I would say that you are a person who can give a good insight on their selfs or relationship</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Camilo Matinez</li>
+            <li>Berlin, Germany</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Lolly&#39;s has a very diverse background and extensive experience. She tailors her working knowledge and interpersonal
+        skills to best suit an individual&#39;s needs.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Naila</li>
+            <li>Charlotte, NC, Management Consultant</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Strong communicator, provide a relaxed and calm setting, good listener, ability to collect another&#39;s thoughts and
+        put it into words and show them a perspective that can help them</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Zack Friedman</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Lolly is a grounded person, eager to investigate diverse ways to support you; always willing to learn and try new
+        things</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>Renata</li>
+            <li>Blantyre, Malawi (U.S. citizen); Consultant;</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Lolly has a beautiful blend of being soft and playful and loving and yet highly engaged in her work and learning and
+        desire to help.</p>
+        <div class="cd-author">
+          <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+          <ul class="cd-author-info">
+            <li>John White</li>
+            <li>New Haven, CT</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <!-- cd-testimonials -->
+    <a href="#0" class="cd-see-all">See all <i class="fa fa-chevron-down fa-2x"></i></a>
+  </div>
+  <!-- cd-testimonials-wrapper -->
+  <div class="cd-testimonials-all">
+    <div class="cd-testimonials-all-wrapper">
+      <ul>
+        <li class="cd-testimonials-item">
+          <p>When am around you I feel so happy because you are happy and I also feel calm when am around you and I feel loved.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Acirce George</li>
+              <li>Certified Yoga Instructor, Uganda.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>You have helped me understand romantic relationships and relationships with friends and family by showing me a
+          different perspective. You have helped me break down relationships and situations to see the experience clearly without
+          distractions of emotion or my own self-absorption which helps me in situations now where I reflect on events outside of
+          just my personal view, attachments, and social constraints..</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>C***y</li>
+              <li>NYC</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>you are a spiritual healer and that you focus on meditation as a means of becoming centered. I think you could support
+          them by giving them some guidance material at first so that they can educate themselves a bit about healing from trauma
+          and to see if this is the best path for them. Then you could answer any questions they might have, and you could ask them
+          questions as well, perhaps questions they never thought of before, which might help them to understand the importance of
+          going through the healing process.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>S***ne G***t; Lawyer</li>
+              <li>Kingston, Jamaica</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Lolly has helped me to learn visualizations such as someone&#39;s excessive mind chatter or negative vibes to enter
+          into a big black cauldron instead of allowing those vibes be absorbed into my own being. It has helped me to protect
+          myself and harness my own physical, mental &amp; emotional energies. She also deepened my understanding of cord cutting
+          through ceremony and visual techniques. I now feel more in charge of my healing progress and can now share this deep
+          wisdom with others who may suffer from emotional/energetic wounds. It seems that the universe brought Lolly &amp; I
+          together at a time where we both were seeking female friendship with someone who was deeply rooted in Love. Thank you for
+          bringing deep joy, feminine wisdom &amp;&amp;love into my life. Namaste.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Tina Ulrich</li>
+              <li>West Haven</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Where I have reached is because of your effort, I have moved 50% in my journey because of you, you remain a role model
+          and a kind, caring, supportive and a loving person in my life and family.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Anena Kevin Okumu</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>you helped to reflect back to me the way that i was judging myself as being either not enough or too much. our session
+          helped bring awareness to how silly my fears and self-judgments are, which allows me to be less attached to these
+          judgments, laugh at them, release them, notice them instead of feeling like they are the truth and move on with my day.
+          you also helped me to feel more comfortable in my own skin, to feel normal, to love myself, my family and my friends even
+          deeper. Thank you.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Jackie Ryan</li>
+              <li>Harmony House, West Haven</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>You helped me understand moon energy, although the euphoria of MDMA probably had a lot to do with it haha. I also felt
+          that I was able to confront some conflict in myself relating to gender roles. I appreciated having you as a female
+          friend, especially in a town where so much emphasis is placed on sexuality.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Adrian</li>
+              <li>New Boston</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>You helped provide guidance as I considered entering into the social work profession. Also, your facebook posts always
+          cause me to self-reflect on areas of improvement. They help to keep me accountable to myself and who I want to be.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Apryl</li>
+              <li>Austin, TX; Mental Health Policy</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>I would say that you are a person who can give a good insight on their selfs or relationship</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Camilo Matinez</li>
+              <li>Berlin, Germany</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Lolly&#39;s has a very diverse background and extensive experience. She tailors her working knowledge and
+          interpersonal skills to best suit an individual&#39;s needs.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Naila</li>
+              <li>Charlotte, NC, Management Consultant</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Strong communicator, provide a relaxed and calm setting, good listener, ability to collect another&#39;s thoughts and
+          put it into words and show them a perspective that can help them</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Zack Friedman</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Lolly is a grounded person, eager to investigate diverse ways to support you; always willing to learn and try new
+          things</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>Renata</li>
+              <li>Blantyre, Malawi (U.S. citizen); Consultant;</li>
+            </ul>
+          </div>
+        </li>
+        <li class="cd-testimonials-item">
+          <p>Lolly has a beautiful blend of being soft and playful and loving and yet highly engaged in her work and learning and
+          desire to help.</p>
+          <div class="cd-author">
+            <!--<img src="img/avatar-1.jpg" alt="Author image">-->
+            <ul class="cd-author-info">
+              <li>John White</li>
+              <li>New Haven, CT</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- cd-testimonials-all-wrapper -->
+    <!-- cd-testimonials-all-wrapper -->
+    <a href="#0" class="close-btn">Close</a>
+  </div>
+  <!-- cd-testimonials-all -->
+  <br />
+  <br />
+  <hr/>
+  <aside class="bg-dark">
+    <div class="container text-center">
+      <div class="call-to-action">
+      <h2>Subscribe to my weekly updates</h2>
+      <!--<a href="#" class="btn btn-default btn-xl wow tada">Subscribe</a>-->
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css" />
+      <center>
+        <div id="mc_embed_signup">
+          <form action="//Lollybe.us10.list-manage.com/subscribe/post?u=e9e7a633f2821e1d015553503&amp;id=ecc03134f6" method="post"
+          id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+          style="text-align:center;" novalidate="">
+            <center>
+              <form class="form-inline" role="form">
+                <div class="input-group">
+                <input type="email" value="" class="form-control" title="We won&#39;t spam you! We promise!" name="EMAIL"
+                id="mce-EMAIL" placeholder="Enter your email-id..." style="display:inline-block;" required="" /> 
+                <button type="submit" class="ghost-button" style="margin-top:4%" onclick="message()">Subscribe</button></div>
+              </form>
+            </center>
+            <div id="msg" style="display:none">
+              <br />
+              <h5 style="font-family:arial;color:#00CC66;margin-left:14%;margin-top:13% align:center">To complete the subscription
+              process, please click the link in the email we just sent you.</h5>
+            </div>
+          </form>
+        </div>
+      </center>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> 
+      <script type='text/javascript'>
+(function($) {window.fnames = new Array(); window.ftypes = new
+Array();fnames[0]=&amp;amp;amp;amp;#39;EMAIL&amp;amp;amp;amp;#39;;ftypes[0]=&amp;amp;amp;amp;#39;email&amp;amp;amp;amp;#39;;fnames[1]=&amp;amp;amp;amp;#39;FNAME&amp;amp;amp;amp;#39;;ftypes[1]=&amp;amp;amp;amp;#39;text&amp;amp;amp;amp;#39;;fnames[2]=&amp;amp;amp;amp;#39;LNAME&amp;amp;amp;amp;#39;;ftypes[2]=&amp;amp;amp;amp;#39;text&amp;amp;amp;amp;#39;;}(jQuery));var
+$mcj = jQuery.noConflict(true);
+</script> 
+      <!--End mc_embed_signup--></div>
+    </div>
+  </aside>
+  <section id="contact" style="background-color:#8bd5b5">
+    <div class="container" style='padding: 2%;'>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading" style='color:white'>Let&#39;s Get In Touch!</h2>
+          <hr class="primary" />
+          <p style="color:white">Ready to heal with me? That&#39;s great! Give me a call or send me an email and I will get back to
+          you as soon as possible!</p>
+        </div>
+        <br />
+        <br />
+        <div class="col-lg-4 col-lg-offset-2 text-center">
+		<i class="fa fa-phone fa-3x wow bounceIn" style="visibility: visible; animation-name: bounceIn; color:black;"></i>
+          <p style="color:white">123-456-6789</p>
+        </div>
+        <div class="col-lg-4 text-center">
+		<i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;color:black;"></i>
+          <p>
+            <a href="mailto:your-email@your-domain.com" style="color:white">lollybe@preseed.in</a>
+          </p>
+        </div>
+        <br />
+        <br />
+        <div align="center" class="footer-icons col-lg-4 col-lg-offset-4 text-center">
+        <p style="color:white;font-size:25px;">FOLLOW US</p>
 
-</body>
-
+        <a href="https://www.facebook.com/LollyBeYoga" target="_blank"><i class="fa fa-facebook"></i></a> 
+        <a href="https://twitter.com/lollybehealing" target="_blank"><i class="fa fa-twitter"></i></a> 
+        <a href="https://instagram.com/lollybehealing/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-medium"></i></a> </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: darkslategrey;">
+    <br />
+    <div align="center">
+      <h4 style="font-family:Helvetica;color:white">a 
+      <a href="http://4c.preseed.in/" style="color:gray; text-decoration:none;!important;" target="_blank">
+        <b>4Consult</b>
+      </a> project</h4>
+    </div>
+    <!--<center><a href="http://wordpress.org/" style="color:MediumPurple" title="Semantic Personal Publishing Platform" target="_blank">Proudly powered by WordPress</a></center>-->
+    <br />
+  </footer>
+  <!-- #colophon -->
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script> 
+  <!-- Bootstrap Core JavaScript -->
+   
+  <script src="js/bootstrap.min.js"></script> 
+  <!-- Plugin JavaScript -->
+   
+  <script src="js/jquery.easing.min.js"></script> 
+  <script src="js/jquery.fittext.js"></script> 
+  <script src="js/wow.min.js"></script> 
+  <!-- Custom Theme JavaScript -->
+   
+  <script src="js/creative.js"></script> 
+  <script src="js/main.js"></script> 
+  <!--<script src="js/jquery-2.1.1.js"></script>-->
+   
+  <script src="nav/js/main.js"></script> 
+  <!-- Resource jQuery -->
+   
+  <!--<script src="js/main1.js"></script>-->
+   
+  <script>
+    (function(i,s,o,g,r,a,m){i[&amp;amp;amp;amp;#39;GoogleAnalyticsObject&amp;amp;amp;amp;#39;]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   
+})(window,document,&amp;amp;amp;amp;#39;script&amp;amp;amp;amp;#39;,&amp;amp;amp;amp;#39;//www.google-analytics.com/analytics.js&amp;amp;amp;amp;#39;,&amp;amp;amp;amp;#39;ga&amp;amp;amp;amp;#39;);
+    ga(&amp;amp;amp;amp;#39;create&amp;amp;amp;amp;#39;, &amp;amp;amp;amp;#39;UA-48014931-1&amp;amp;amp;amp;#39;,
+&amp;amp;amp;amp;#39;codyhouse.co&amp;amp;amp;amp;#39;);
+    ga(&amp;amp;amp;amp;#39;send&amp;amp;amp;amp;#39;, &amp;amp;amp;amp;#39;pageview&amp;amp;amp;amp;#39;);
+    jQuery(document).ready(function($){
+        $(&amp;amp;amp;amp;#39;.close-carbon-adv&amp;amp;amp;amp;#39;).on(&amp;amp;amp;amp;#39;click&amp;amp;amp;amp;#39;,
+function(){
+            $(&amp;amp;amp;amp;#39;#carbonads-container&amp;amp;amp;amp;#39;).hide();
+        });
+    });
+    
+</script> 
+  <script type="text/javascript">
+  function message(){
+    div = document.getElementById(&amp;amp;amp;amp;#39;msg&amp;amp;amp;amp;#39;);
+    div.style.display = &amp;amp;amp;amp;quot;block&amp;amp;amp;amp;quot;;
+  }
+</script> 
+  <script src="testimonial1/js/jquery-2.1.1.js"></script> 
+  <script src="testimonial1/js/masonry.pkgd.min.js"></script> 
+  <script src="testimonial1/js/jquery.flexslider-min.js"></script> 
+  <script src="testimonial1/js/main.js"></script> 
+  <!-- Resource jQuery -->
+   
+  <script src="nav/js/jquery-2.1.1.js"></script> 
+  <!-- Resource jQuery -->
+   
+  <script src="offering/main.min.js"></script></div></body>
 </html>
